@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calvin Howard | Español</title>
+    <link rel="icon" href="./favicon.ico" />
     <link rel="stylesheet" href="index.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
@@ -47,7 +48,7 @@
             </a>
           </button>
 
-          <button title="Download PDF" class="info_buttons">
+          <button title="Descargar PDF" class="info_buttons">
             <a href="./CV Calvin Howard.pdf" download="CV_Calvin_Howard">
               <img
                 id="doc_icon"
@@ -57,7 +58,7 @@
             </a>
           </button>
 
-          <button title="Go to LinkedIn" class="info_buttons">
+          <button title="Ir a LinkedIn" class="info_buttons">
             <a
               href="https://www.linkedin.com/in/calvin-howard-853895283/"
               target="_blank"
@@ -70,7 +71,7 @@
             </a>
           </button>
 
-          <button title="Go to GitHub" class="info_buttons">
+          <button title="Ir a GitHub" class="info_buttons">
             <a href="https://github.com/Calvinuhh" target="_blank">
               <img
                 id="doc_icon"
@@ -85,18 +86,19 @@
 
     <section style="margin-bottom: 50px" class="about_me_container">
       <div class="about_me_title">
-        <h2>About me</h2>
+        <h2>Sobre mí</h2>
       </div>
 
-      <div>
+      <div style="margin-bottom: 15px">
         <p style="text-align: justify" class="about_me_text">
           Desarrollador Backend junior, experiencia y proyectos en el Stack
-          PERN, conocimientos en mongoDB y Mongoose, JWT y API de Mercado Pago,
-          constantemente me estoy actualizando acerca de las nuevas tendencias y
-          tecnologías en el desarrollo web, en constante profundización de las
-          tecnologías que ya domino, considero que puedo aportar gran valor en
-          la parte del desarrollo Backend especialmente con Express.js ya que es
-          el framework con la cual mas he practicado y desarrollado proyectos.
+          <strong>PERN</strong> y <strong>MERN</strong>, <strong>JWT</strong> y
+          <strong> API de Mercado Pago</strong>, constantemente me estoy
+          actualizando acerca de las nuevas tendencias y tecnologías en el
+          desarrollo web, en constante profundización de las tecnologías que ya
+          domino, considero que puedo aportar gran valor en la parte del
+          desarrollo Backend especialmente con Express.js ya que es el framework
+          con la cual mas he practicado y desarrollado proyectos.
         </p>
         <br />
         <p style="text-align: justify" class="about_me_text">
@@ -108,9 +110,9 @@
       <hr />
     </section>
 
-    <section style="margin-bottom: 500px" class="technologies_container">
+    <section style="margin-bottom: 70px" class="technologies_container">
       <h2 style="margin-bottom: 30px">Tecnologias</h2>
-      <div class="logos_container">
+      <div style="margin-bottom: 60px" class="logos_container">
         <img
           title="Node.js"
           class="technologies_logos"
@@ -197,8 +199,242 @@
           alt="react_logo"
         />
       </div>
+      <hr />
     </section>
+    <main class="experience_container">
+      <h2 style="margin-bottom: 50px">Experiencia</h2>
+
+      <div class="experience_div1">
+        <h2 class="experience_titles">My Cleaning Solutions</h2>
+        <h2 class="experience_titles experience_dates">
+          dic. 2023 - ene. 2024
+        </h2>
+      </div>
+
+      <div style="margin-bottom: 50px" class="experience_div2">
+        <h3>Desarrollador Web (trabajo freelance)</h3>
+        <p class="experience_p">
+          Desarrollo de un sitio web para una empresa de limpieza en Estados
+          Unidos con el framework Astro
+        </p>
+        <button
+          class="details_modal_button"
+          onclick="openModal('.details_modal')"
+        >
+          Detalles
+        </button>
+        <dialog class="details_modal">
+          <div class="details_container">
+            <div class="details_container_technologies">
+              <h2 style="color: white">Tecnologias principales:</h2>
+              <div>
+                <img
+                  class="details_images"
+                  src="https://astro.build/assets/press/astro-logo-light-gradient.png"
+                  alt="astro_logo"
+                />
+              </div>
+            </div>
+
+            <button
+              class="details_exit_button"
+              onclick="closeModal('.details_modal')"
+            >
+              <img
+                class="details_exit_image"
+                src="./imgs//png-transparent-x-exit-button-icon-symbol-vector-illustration-closing-file-no-decline-thumbnail.png"
+                alt=""
+              />
+            </button>
+          </div>
+
+          <div>
+            <p>
+              Este sitio fue desarrollado para una empresa de limpieza en
+              Estados Unidos. Las principales funciones fueron:
+            </p>
+
+            <br />
+
+            <ul style="color: white">
+              <li>• Landing page</li>
+              <li>• Pagina de informacion</li>
+              <li>• Formulario para solicitar servicios</li>
+              <li>
+                • SDK de Email.js para la comunicación entre los clientes y la
+                empresa
+              </li>
+            </ul>
+            <br />
+            <p>
+              Fue un reto probar Astro, ya que es un framework que no había
+              probado antes, es muy versátil y tiene mucho potencial!
+            </p>
+            <br />
+            <p>
+              Utilicé <strong>Render</strong>, como servicio gratuito, que me
+              sirvió para entender a un nivel básico cuál es la dinámica para
+              desplegar una página web estática.
+            </p>
+
+            <br />
+            <p>
+              Puedes consultar la página haciendo clic en el siguiente enlace.
+            </p>
+            <br />
+
+            <a target="_blank" href="https://my-cleaning-solution.com/">
+              <h1 id="mycleaning_link">Link</h1>
+            </a>
+          </div>
+        </dialog>
+      </div>
+      <hr />
+    </main>
+
+    <main style="margin-top: 60px" class="experience_container">
+      <h2 style="margin-bottom: 50px">Educación</h2>
+
+      <div class="experience_div1">
+        <h2 class="experience_titles">Soy Henry</h2>
+        <h2 class="experience_titles experience_dates">
+          oct. 2023 - jun. 2024
+        </h2>
+      </div>
+
+      <div style="margin-bottom: 300px" class="experience_div2">
+        <h3>Full Stack Developer Bootcamp</h3>
+        <p class="experience_p">
+          Bootcamp de programación enfocado en tecnologías javascript como
+          Node.js, React y Express.
+        </p>
+
+        <button
+          class="details_modal_button"
+          onclick="openModal('.details_modal2')"
+        >
+          Detalles
+        </button>
+
+        <dialog class="details_modal2">
+          <div class="details_container">
+            <div class="details_container_technologies">
+              <h2 style="color: white">Tecnologias:</h2>
+              <div class="details_container_images">
+                <img
+                  class="details_images"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/2560px-Node.js_logo_2015.svg.png"
+                  alt="node_logo"
+                />
+                <img
+                  class="details_images"
+                  src="https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png"
+                  alt="react_logo"
+                />
+                <img
+                  class="details_images"
+                  src="https://keenethics.com/wp-content/uploads/2021/10/Express.js.svg"
+                  alt="express_logo"
+                />
+                <img
+                  class="details_images"
+                  src="https://ashnik.com/wp-content/uploads/2021/02/Postgresql-w.png"
+                  alt="postgresql_logo"
+                />
+                <img
+                  class="details_images"
+                  src="https://cdn.iconscout.com/icon/free/png-256/free-sequelize-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-icons-1175091.png"
+                  alt="sequelize_logo"
+                />
+                <img
+                  class="details_images"
+                  src="./imgs/jwtio-json-web-token.png"
+                  alt="jwt_logo"
+                />
+              </div>
+            </div>
+
+            <button
+              class="details_exit_button"
+              onclick="closeModal('.details_modal2')"
+            >
+              <img
+                class="details_exit_image"
+                src="./imgs//png-transparent-x-exit-button-icon-symbol-vector-illustration-closing-file-no-decline-thumbnail.png"
+                alt=""
+              />
+            </button>
+          </div>
+
+          <div>
+            <p>
+              En este bootcamp realizamos proyectos tanto en cliente como en
+              servidor, además de conectarnos a una base de datos relacional,
+              exploramos diversas tecnologías y librerías para desarrollo web.
+              Finalizamos con un proyecto grupal donde desarrollamos una
+              aplicación Full Stack con todo lo aprendido en el curso, y además
+              de eso implementamos otras tecnologías como JWT, Auth0 y Mercado
+              Pago.
+            </p>
+            <br />
+            <br />
+            <p>
+              Al finalizar el curso se entregó un certificado del bootcamp,
+              indicando el número de horas realizadas y las principales
+              tecnologías utilizadas.
+            </p>
+            <br />
+
+            <div class="container_pdf">
+              <iframe
+                style="width: 700px; height: 450px"
+                src="https://d2rf2c6bvm78n9.cloudfront.net/new-cert?id=90919c4249f9deb146a1fe52bbcd7e4f9f95168fbe985954a2f1b5689133f933"
+                frameborder="0"
+              ></iframe>
+              <div id="pdf_div_container" style="align-content: center">
+                <p style="text-align: center">
+                  También puedes consultar mi perfil en
+                  <strong>Henry Talent</strong>, una bolsa de empleo de
+                  egresados de Soy Henry que buscan trabajo.
+                </p>
+                <br />
+                <a href="">
+                  <h1 id="henry_talent_link">Link</h1>
+                </a>
+              </div>
+            </div>
+            <br />
+          </div>
+        </dialog>
+      </div>
+    </main>
 
     <footer></footer>
+
+    <script>
+      const openModal = (modalclass) => {
+        const modal = document.querySelector(modalclass);
+        modal.style.display = "flex";
+        modal.style.animation = "puff-in-center 1s both";
+        modal.showModal();
+
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape") {
+            modal.close();
+            modal.style.display = "none";
+          }
+        });
+      };
+
+      const closeModal = (modalclass) => {
+        const modal = document.querySelector(modalclass);
+        modal.style.animation =
+          "flip-out-hor-top 0.45s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
+        setTimeout(() => {
+          modal.close();
+          modal.style.display = "none";
+        }, 750);
+      };
+    </script>
   </body>
 </html>

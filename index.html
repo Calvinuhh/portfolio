@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calvin Howard | English</title>
+    <link rel="icon" href="./favicon.ico" />
     <link rel="stylesheet" href="index.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
@@ -84,19 +85,25 @@
     </header>
 
     <section style="margin-bottom: 50px" class="about_me_container">
-      <div class="about_me_title">
+      <div>
         <h2>About me</h2>
       </div>
 
-      <div>
+      <div style="margin-bottom: 15px">
         <p style="text-align: justify" class="about_me_text">
-          Junior Backend Developer graduated, experience and projects in PERN
-          Stack, knowledge in mongoDB and Mongoose, JWT and Mercado Pago API, I
-          am constantly updating myself about new trends and technologies in web
-          development, constantly deepening the technologies that I already
-          master, I consider that I can contribute great value in the Backend
-          development part, especially with Express.js since it is the framework
-          with which I have practiced and developed projects the most.
+          Junior Backend Developer, experience and projects in
+          <strong> PERN </strong>
+          and
+          <strong> MERN </strong>
+          Stack,
+          <strong> JWT </strong>
+          and
+          <strong> Mercado Pago API </strong>, I am constantly updating myself
+          about new trends and technologies in web development, constantly
+          deepening the technologies that I already master, I consider that I
+          can contribute great value in the Backend development, especially with
+          Express.js since it is the framework with which I have practiced and
+          developed projects the most.
         </p>
         <br />
         <p style="text-align: justify" class="about_me_text">
@@ -108,9 +115,9 @@
       <hr />
     </section>
 
-    <section style="margin-bottom: 500px" class="technologies_container">
+    <section style="margin-bottom: 70px" class="technologies_container">
       <h2 style="margin-bottom: 30px">Technologies</h2>
-      <div class="logos_container">
+      <div style="margin-bottom: 60px" class="logos_container">
         <img
           title="Node.js"
           class="technologies_logos"
@@ -197,8 +204,241 @@
           alt="react_logo"
         />
       </div>
+      <hr />
     </section>
 
+    <main class="experience_container">
+      <h2 style="margin-bottom: 50px">Experience</h2>
+
+      <div class="experience_div1">
+        <h2 class="experience_titles">My Cleaning Solutions</h2>
+        <h2 class="experience_titles experience_dates">
+          dec. 2023 - jan. 2024
+        </h2>
+      </div>
+
+      <div style="margin-bottom: 50px" class="experience_div2">
+        <h3>Web Developer (freelance work)</h3>
+        <p class="experience_p">
+          Development of a website for a cleaning company in United States with
+          the framework Astro
+        </p>
+        <button
+          class="details_modal_button"
+          onclick="openModal('.details_modal')"
+        >
+          Details
+        </button>
+        <dialog class="details_modal">
+          <div class="details_container">
+            <div class="details_container_technologies">
+              <h2 style="color: white">Main technologies:</h2>
+              <div>
+                <img
+                  class="details_images"
+                  src="https://astro.build/assets/press/astro-logo-light-gradient.png"
+                  alt="astro_logo"
+                />
+              </div>
+            </div>
+
+            <button
+              class="details_exit_button"
+              onclick="closeModal('.details_modal')"
+            >
+              <img
+                class="details_exit_image"
+                src="./imgs//png-transparent-x-exit-button-icon-symbol-vector-illustration-closing-file-no-decline-thumbnail.png"
+                alt=""
+              />
+            </button>
+          </div>
+
+          <div>
+            <p>
+              This site was developed for a cleaning company in the United
+              States, the main functions were:
+            </p>
+
+            <br />
+
+            <ul style="color: white">
+              <li>• Landing page</li>
+              <li>• Information page</li>
+              <li>• Form for requesting services</li>
+              <li>
+                • Email.js SDK for communication between customers and the
+                company
+              </li>
+            </ul>
+            <br />
+            <p>
+              it was a challenge to try Astro, since it is a framework that I
+              had not tried before, it is very versatile and has a lot of
+              potential!
+            </p>
+            <br />
+            <p>
+              I used <strong> Render </strong>, as free service, which served to
+              understand at a basic level what the dynamics are for deploying a
+              static web page.
+            </p>
+
+            <br />
+            <p>You can check out the page by clicking the link below.</p>
+            <br />
+
+            <a target="_blank" href="https://my-cleaning-solution.com/">
+              <h1 id="mycleaning_link">Link</h1>
+            </a>
+          </div>
+        </dialog>
+      </div>
+      <hr />
+    </main>
+
+    <main style="margin-top: 60px" class="experience_container">
+      <h2 style="margin-bottom: 50px">Education</h2>
+
+      <div class="experience_div1">
+        <h2 class="experience_titles">Soy Henry</h2>
+        <h2 class="experience_titles experience_dates">
+          oct. 2023 - jun. 2024
+        </h2>
+      </div>
+
+      <div style="margin-bottom: 300px" class="experience_div2">
+        <h3>Full Stack Developer Bootcamp</h3>
+        <p class="experience_p">
+          Programming bootcamp focused on javascript technologies such as
+          Node.js, React and Express.
+        </p>
+
+        <button
+          class="details_modal_button"
+          onclick="openModal('.details_modal2')"
+        >
+          Details
+        </button>
+
+        <dialog class="details_modal2">
+          <div class="details_container">
+            <div class="details_container_technologies">
+              <h2 style="color: white">Main technologies:</h2>
+              <div class="details_container_images">
+                <img
+                  class="details_images"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/2560px-Node.js_logo_2015.svg.png"
+                  alt="node_logo"
+                />
+                <img
+                  class="details_images"
+                  src="https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png"
+                  alt="react_logo"
+                />
+                <img
+                  class="details_images"
+                  src="https://keenethics.com/wp-content/uploads/2021/10/Express.js.svg"
+                  alt="express_logo"
+                />
+                <img
+                  class="details_images"
+                  src="https://ashnik.com/wp-content/uploads/2021/02/Postgresql-w.png"
+                  alt="postgresql_logo"
+                />
+                <img
+                  class="details_images"
+                  src="https://cdn.iconscout.com/icon/free/png-256/free-sequelize-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-icons-1175091.png"
+                  alt="sequelize_logo"
+                />
+                <img
+                  class="details_images"
+                  src="./imgs/jwtio-json-web-token.png"
+                  alt="jwt_logo"
+                />
+              </div>
+            </div>
+
+            <button
+              class="details_exit_button"
+              onclick="closeModal('.details_modal2')"
+            >
+              <img
+                class="details_exit_image"
+                src="./imgs//png-transparent-x-exit-button-icon-symbol-vector-illustration-closing-file-no-decline-thumbnail.png"
+                alt=""
+              />
+            </button>
+          </div>
+
+          <div>
+            <p>
+              In this bootcamp we carried out projects both on the client and on
+              the server, in addition to connecting to a relational database, we
+              explored various technologies and libraries for web development.
+              We ended with a group project where we developed a Full Stack
+              application with everything learned in the course, and in addition
+              to that we implemented other technologies such as JWT, Auth0 and
+              Mercado Pago.
+            </p>
+            <br />
+            <br />
+            <p>
+              At the end of the course, a certificate of the bootcamp was given,
+              indicating the number of hours taken and the main technologies.
+            </p>
+            <br />
+
+            <div class="container_pdf">
+              <iframe
+                style="width: 700px; height: 450px"
+                src="https://d2rf2c6bvm78n9.cloudfront.net/new-cert?id=90919c4249f9deb146a1fe52bbcd7e4f9f95168fbe985954a2f1b5689133f933"
+                frameborder="0"
+              ></iframe>
+              <div id="pdf_div_container" style="align-content: center">
+                <p style="text-align: center">
+                  You can also check out my profile on
+                  <strong>Henry Talent</strong>, a job board for Soy Henry
+                  graduates looking for work.
+                </p>
+                <br />
+                <a href="">
+                  <h1 id="henry_talent_link">Link</h1>
+                </a>
+              </div>
+            </div>
+            <br />
+          </div>
+        </dialog>
+      </div>
+    </main>
+
     <footer></footer>
+
+    <script>
+      const openModal = (modalclass) => {
+        const modal = document.querySelector(modalclass);
+        modal.style.display = "flex";
+        modal.style.animation = "puff-in-center 1s both";
+        modal.showModal();
+
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape") {
+            modal.close();
+            modal.style.display = "none";
+          }
+        });
+      };
+
+      const closeModal = (modalclass) => {
+        const modal = document.querySelector(modalclass);
+        modal.style.animation =
+          "flip-out-hor-top 0.45s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
+        setTimeout(() => {
+          modal.close();
+          modal.style.display = "none";
+        }, 750);
+      };
+    </script>
   </body>
 </html>
