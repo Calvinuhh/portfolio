@@ -15,14 +15,19 @@
       style="margin-bottom: 100px; margin-top: 100px"
       class="header_container"
     >
-      <button class="languague_container">
-        <a style="text-decoration: none" href="./index.html">
+      <a style="text-decoration: none" href="./index.html">
+        <button class="languague_container">
           <p style="font-size: 30px">EN</p>
-        </a>
-      </button>
+        </button>
+      </a>
 
       <div>
-        <img id="cv_pic" src="./imgs/CV pic.jpeg" alt="cv_pic" />
+        <img
+          title="Curriculum"
+          id="cv_pic"
+          src="./imgs/CV pic.jpeg"
+          alt="cv_pic"
+        />
       </div>
 
       <div class="header_data_container">
@@ -48,8 +53,11 @@
             </a>
           </button>
 
-          <button title="Descargar PDF" class="info_buttons">
-            <a href="./CV Calvin Howard.pdf" download="CV_Calvin_Howard">
+          <button title="Ver PDF" class="info_buttons">
+            <a
+              href="https://drive.google.com/file/d/168gxnurjo7Expo90msTg72XQZ8NLRfbm/view?usp=sharing"
+              target="_blank"
+            >
               <img
                 id="doc_icon"
                 src="./imgs/icons8-documento-64.png"
@@ -187,7 +195,7 @@
           alt="sequelize_logo"
         />
         <img
-          title="JWT"
+          title="Json Web Token"
           class="technologies_logos css"
           src="https://ies.solutions/wordpress/wp-content/uploads/jwt.png"
           alt="jwt_logo"
@@ -201,7 +209,7 @@
       </div>
       <hr />
     </section>
-    <main class="experience_container">
+    <main class="main_content_container">
       <h2 style="margin-bottom: 50px">Experiencia</h2>
 
       <div class="experience_div1">
@@ -243,7 +251,7 @@
               <img
                 class="details_exit_image"
                 src="./imgs//png-transparent-x-exit-button-icon-symbol-vector-illustration-closing-file-no-decline-thumbnail.png"
-                alt=""
+                alt="exit_btn"
               />
             </button>
           </div>
@@ -284,7 +292,7 @@
             <br />
 
             <a target="_blank" href="https://my-cleaning-solution.com/">
-              <h1 id="mycleaning_link">Link</h1>
+              <img id="mycleaning_link" src="./imgs/link.png" alt="link_icon" />
             </a>
           </div>
         </dialog>
@@ -292,7 +300,7 @@
       <hr />
     </main>
 
-    <main style="margin-top: 60px" class="experience_container">
+    <main style="margin-top: 60px" class="main_content_container">
       <h2 style="margin-bottom: 50px">Educación</h2>
 
       <div class="experience_div1">
@@ -302,7 +310,7 @@
         </h2>
       </div>
 
-      <div style="margin-bottom: 300px" class="experience_div2">
+      <div style="margin-bottom: 10px" class="experience_div2">
         <h3>Full Stack Developer Bootcamp</h3>
         <p class="experience_p">
           Bootcamp de programación enfocado en tecnologías javascript como
@@ -361,7 +369,7 @@
               <img
                 class="details_exit_image"
                 src="./imgs//png-transparent-x-exit-button-icon-symbol-vector-illustration-closing-file-no-decline-thumbnail.png"
-                alt=""
+                alt="exit_btn"
               />
             </button>
           </div>
@@ -402,7 +410,11 @@
                   target="_blank"
                   href="https://www.talent.soyhenry.com/candidate/19267"
                 >
-                  <h1 id="henry_talent_link">Link</h1>
+                  <img
+                    id="henry_talent_link"
+                    src="./imgs/link.png"
+                    alt="link_icon"
+                  />
                 </a>
               </div>
             </div>
@@ -412,7 +424,417 @@
       </div>
     </main>
 
-    <footer></footer>
+    <main style="margin-top: 60px" class="main_content_container">
+      <div class="experience_div1">
+        <h2 class="experience_titles">
+          Servicio Nacional de Aprendizaje (SENA)
+        </h2>
+        <h2 class="experience_titles experience_dates">
+          sep. 2024 - actualmente
+        </h2>
+      </div>
+
+      <div style="margin-bottom: 50px" class="experience_div2">
+        <h3>Tecnico en Programacion de Software</h3>
+        <p class="experience_p">
+          Carrera técnica enfocada al aprendizaje de lenguajes de programación,
+          herramientas de desarrollo web, frontend, backend, bases de datos,
+          metodologías ágiles
+        </p>
+
+        <button
+          class="details_modal_button"
+          onclick="openModal('.details_modal3')"
+        >
+          Details
+        </button>
+
+        <dialog class="details_modal3">
+          <div class="details_container" id="details_container3">
+            <div class="details_container_technologies">
+              <h2 style="color: white">Tecnologias principales:</h2>
+              <div class="details_container_images">
+                <img
+                  class="details_images"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Sql_data_base_with_logo.svg/2560px-Sql_data_base_with_logo.svg.png"
+                  alt="sql_logo"
+                />
+                <img
+                  class="details_images"
+                  src="https://1000marcas.net/wp-content/uploads/2020/11/MySQL-logo.png"
+                  alt="mysql_logo"
+                />
+                <img
+                  class="details_images"
+                  src="https://cdn.iconscout.com/icon/free/png-256/free-java-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-language-pack-logos-icons-1174953.png?f=webp&w=256"
+                  alt="java_logo"
+                />
+                <img
+                  class="details_images"
+                  src="https://programaenlinea.net/wp-content/uploads/2016/06/scrum-arquitectura.png"
+                  alt="java_logo"
+                />
+              </div>
+            </div>
+
+            <button
+              class="details_exit_button"
+              onclick="closeModal('.details_modal3')"
+            >
+              <img
+                class="details_exit_image"
+                src="./imgs//png-transparent-x-exit-button-icon-symbol-vector-illustration-closing-file-no-decline-thumbnail.png"
+                alt="exit_btn"
+              />
+            </button>
+          </div>
+
+          <p>
+            Actualmente cursando un Programa Técnico en Programación de Software
+            en SENA, Colombia, enfocado en conceptos básicos de programación,
+            lógica computacional y principios básicos de la informática.
+            Adquiriendo experiencia práctica con Java para el desarrollo de
+            software, explorando la gestión y el diseño de bases de datos y
+            entendiendo metodologías ágiles como Scrum. Este programa enfatiza
+            la resolución práctica de problemas y prepara para los desafíos del
+            desarrollo de software del mundo real.
+          </p>
+          <br />
+        </dialog>
+      </div>
+      <hr />
+    </main>
+
+    <main style="margin-top: 60px" class="main_content_container">
+      <h2 style="margin-bottom: 50px">Licencias y Certificaciones</h2>
+
+      <div class="experience_div1">
+        <h2 class="experience_titles">Udemy</h2>
+      </div>
+
+      <div style="margin-bottom: 10px" class="experience_div2">
+        <div class="certificacions_container">
+          <h3>Node.js - Desarrollo Web, MVC y REST APIs</h3>
+
+          <div class="container_images_certificacions">
+            <img
+              title="REST API"
+              class="images_certifications"
+              src="https://miro.medium.com/v2/resize:fit:440/1*J3G3akaMpUOLegw0p0qthA.png"
+              alt="api_rest_logo"
+            />
+            <img
+              title="Model View Controller"
+              class="images_certifications"
+              src="./imgs/png-transparent-model-view-controller-mvc-thumbnail.png"
+              alt="mvc_logo"
+            />
+            <img
+              title="Node.js"
+              class="images_certifications"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/2560px-Node.js_logo_2015.svg.png"
+              alt="node_logo"
+            />
+            <img
+              title="express.js"
+              class="images_certifications"
+              src="https://keenethics.com/wp-content/uploads/2021/10/Express.js.svg"
+              alt="express_logo"
+            />
+            <img
+              title="MongoDB"
+              class="images_certifications"
+              src="https://cdn.iconscout.com/icon/free/png-256/free-mongodb-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-icons-1175140.png?f=webp"
+              alt="mongodb_logo"
+            />
+            <img
+              title="Mongoose"
+              class="images_certifications"
+              src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F99177233598415E22A"
+              alt="mongoose_logo"
+            />
+            <img
+              title="PostgreSQL"
+              class="images_certifications"
+              src="https://ashnik.com/wp-content/uploads/2021/02/Postgresql-w.png"
+              alt="postgresql_logo"
+            />
+            <img
+              title="MySQL"
+              class="images_certifications"
+              src="https://1000marcas.net/wp-content/uploads/2020/11/MySQL-logo.png"
+              alt="mysql_logo"
+            />
+            <img
+              title="Sequelize"
+              class="images_certifications"
+              src="https://cdn.iconscout.com/icon/free/png-256/free-sequelize-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-icons-1175091.png"
+              alt="sequelize_logo"
+            />
+            <img
+              title="Json Web Token"
+              class="images_certifications"
+              src="./imgs/jwtio-json-web-token.png"
+              alt="jwt_logo"
+            />
+          </div>
+        </div>
+        <p class="experience_p">
+          Curso enfocado en Node.js, MVC, API REST, ORMs
+        </p>
+
+        <button
+          class="details_modal_button"
+          onclick="openModal('.details_modal4')"
+        >
+          Certificado
+        </button>
+
+        <dialog class="details_modal4">
+          <div class="details_container" id="details_container4">
+            <button
+              class="details_exit_button"
+              onclick="closeModal('.details_modal4')"
+            >
+              <img
+                class="details_exit_image"
+                src="./imgs//png-transparent-x-exit-button-icon-symbol-vector-illustration-closing-file-no-decline-thumbnail.png"
+                alt="exit_btn"
+              />
+            </button>
+          </div>
+
+          <div class="container_pdf">
+            <iframe
+              style="width: 750px; height: 600px; border: none"
+              src="https://udemy-certificate.s3.amazonaws.com/pdf/UC-624ddf45-25c2-43a5-9c70-6d9890a23c41.pdf"
+            ></iframe>
+          </div>
+        </dialog>
+      </div>
+    </main>
+
+    <main style="margin-top: 60px" class="main_content_container">
+      <div class="experience_div1">
+        <h2 class="experience_titles">Udemy</h2>
+      </div>
+
+      <div style="margin-bottom: 10px" class="experience_div2">
+        <div class="certificacions_container">
+          <h3>
+            Máster en javascript, aprende Node, jquery, Angular, TypeScript
+          </h3>
+
+          <div class="container_images_certificacions">
+            <img
+              title="JavaScript"
+              class="images_certifications"
+              src="https://cdn.icon-icons.com/icons2/2699/PNG/512/javascript_horizontal_logo_icon_170553.png"
+              alt="javascript_logo"
+            />
+            <img
+              title="TypeScript"
+              class="images_certifications"
+              src="https://iconape.com/wp-content/files/rl/371585/svg/371585.svg"
+              alt="typescript_logo"
+            />
+            <img
+              title="HTML"
+              class="images_certifications"
+              src="https://blogs.godigitalchat.com/wp-content/uploads/2023/07/html-l.png"
+              alt="html_logo"
+            />
+            <img
+              title="CSS"
+              class="images_certifications"
+              src="./imgs/image.png"
+              alt="css_logo"
+            />
+
+            <img
+              title="JQuery"
+              class="images_certifications"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/JQuery_logo_text.svg/1280px-JQuery_logo_text.svg.png"
+              alt="jquery_logo"
+            />
+            <img
+              title="Node.js"
+              class="images_certifications"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/2560px-Node.js_logo_2015.svg.png"
+              alt="node_logo"
+            />
+            <img
+              title="Angular"
+              class="images_certifications"
+              src="https://www.xpand-it.com/wp-content/uploads/2018/10/Angular-Logo.png"
+              alt="angular_logo"
+            />
+            <img
+              title="MongoDB"
+              class="images_certifications"
+              src="https://cdn.iconscout.com/icon/free/png-256/free-mongodb-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-icons-1175140.png?f=webp"
+              alt="mongodb_logo"
+            />
+            <img
+              title="Mongoose"
+              class="images_certifications"
+              src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F99177233598415E22A"
+              alt="mongoose_logo"
+            />
+          </div>
+        </div>
+        <p class="experience_p">
+          Curso enfocado en aprender los conceptos básicos de JavaScript, lógica
+          de programación y tecnologías y frameworks derivados de JavaScript y
+          TypeScript.
+        </p>
+
+        <button
+          class="details_modal_button"
+          onclick="openModal('.details_modal5')"
+        >
+          Certificado
+        </button>
+
+        <dialog class="details_modal5">
+          <div class="details_container" id="details_container4">
+            <button
+              class="details_exit_button"
+              onclick="closeModal('.details_modal5')"
+            >
+              <img
+                class="details_exit_image"
+                src="./imgs//png-transparent-x-exit-button-icon-symbol-vector-illustration-closing-file-no-decline-thumbnail.png"
+                alt="exit_btn"
+              />
+            </button>
+          </div>
+
+          <div class="container_pdf">
+            <iframe
+              style="width: 750px; height: 600px; border: none"
+              src="https://udemy-certificate.s3.amazonaws.com/pdf/UC-03c1dfc1-71b0-49c1-9977-ca34849ea213.pdf"
+            ></iframe>
+          </div>
+        </dialog>
+      </div>
+    </main>
+
+    <main
+      style="margin-top: 60px; margin-bottom: 200px"
+      class="main_content_container"
+    >
+      <div class="experience_div1">
+        <h2 class="experience_titles">Udemy</h2>
+      </div>
+
+      <div style="margin-bottom: 10px" class="experience_div2">
+        <div class="certificacions_container">
+          <h3>C # Curso completo para ser programador .NET</h3>
+
+          <div class="container_images_certificacions">
+            <img
+              title="C#"
+              class="images_certifications"
+              src="https://miro.medium.com/v2/resize:fit:1200/1*w0u2TZpEp3WfKMrlL5jTSw.png"
+              alt="csharp_logo"
+            />
+            <img
+              title="C#"
+              class="images_certifications"
+              src="https://logos-world.net/wp-content/uploads/2022/01/NET-Framework-Symbol.png"
+              alt="csharp_logo"
+            />
+          </div>
+        </div>
+        <p class="experience_p">
+          Curso enfocado en fundamentos de computación y programación, lógica de
+          programación, programación orientada a objetos con C#
+        </p>
+
+        <button
+          class="details_modal_button"
+          onclick="openModal('.details_modal6')"
+        >
+          Certificate
+        </button>
+
+        <dialog class="details_modal6">
+          <div class="details_container" id="details_container4">
+            <button
+              class="details_exit_button"
+              onclick="closeModal('.details_modal6')"
+            >
+              <img
+                class="details_exit_image"
+                src="./imgs//png-transparent-x-exit-button-icon-symbol-vector-illustration-closing-file-no-decline-thumbnail.png"
+                alt="exit_btn"
+              />
+            </button>
+          </div>
+
+          <div class="container_pdf">
+            <iframe
+              style="width: 750px; height: 600px; border: none"
+              src="https://udemy-certificate.s3.amazonaws.com/pdf/UC-9e2458c2-cf77-485f-9e56-24727e5809ec.pdf"
+            ></iframe>
+          </div>
+        </dialog>
+      </div>
+    </main>
+
+    <footer class="footer_container">
+      <div class="header_links_container">
+        <button class="header_email_button">
+          <a href="mailto:calvin.uhh@gmail.com">
+            <img
+              id="mail_logo"
+              src="./imgs/icons8-mensaje-relleno-50.png"
+              alt="mail_logo"
+            />
+          </a>
+          <a id="email_a" href="mailto:calvin.uhh@gmail.com"
+            >calvin.uhh@gmail.com
+          </a>
+        </button>
+
+        <button title="Ver PDF" class="info_buttons">
+          <a
+            href="https://drive.google.com/file/d/168gxnurjo7Expo90msTg72XQZ8NLRfbm/view?usp=sharing"
+            target="_blank"
+          >
+            <img
+              id="doc_icon"
+              src="./imgs/icons8-documento-64.png"
+              alt="doc_icon"
+            />
+          </a>
+        </button>
+
+        <button title="Ir a LinkedIn" class="info_buttons">
+          <a
+            href="https://www.linkedin.com/in/calvin-howard-853895283/"
+            target="_blank"
+          >
+            <img
+              id="doc_icon"
+              src="imgs/icons8-linkedin-50.png"
+              alt="linkedin_icon"
+            />
+          </a>
+        </button>
+
+        <button title="Ir a GitHub" class="info_buttons">
+          <a href="https://github.com/Calvinuhh" target="_blank">
+            <img
+              id="doc_icon"
+              src="imgs/icons8-github-50.png"
+              alt="github_icon"
+            />
+          </a>
+        </button>
+      </div>
+    </footer>
 
     <script>
       const openModal = (modalclass) => {
