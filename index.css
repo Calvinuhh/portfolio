@@ -137,19 +137,28 @@ p {
 .about_me_container {
   display: flex;
   flex-direction: column;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   gap: 20px;
+  background-color: #2d2d508a;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about_me_container:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .about_me_text {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 250;
-}
-
-hr {
-  border: 1px solid rgba(0, 0, 0, 0.623);
-  margin: 10px 0;
+  color: white;
+  line-height: 1.6;
 }
 
 .technologies_container {
@@ -184,6 +193,86 @@ hr {
   flex-direction: column;
   width: 1200px;
   margin: 0 auto;
+}
+
+.div_envolver {
+  background-color: #2d2d508a;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects_main_container {
+  display: flex;
+  width: 1100px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+
+.icon_repository {
+  width: 50px;
+  transition: ease 0.2s;
+}
+
+.icon_repository:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.card_container {
+  width: 400px;
+  height: 600px;
+  margin: 0px 50px;
+  border-radius: 16px 16px;
+  transition: 0.1s ease;
+  background-color: white;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card_container:hover {
+  transform: scale(1.1);
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+.projects_imgs {
+  width: 400px;
+  height: 210px;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.card_container_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#modal_btn_doc {
+  background-color: transparent;
+}
+
+.card_title {
+  color: black;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.card_container_text {
+  width: 350px;
+  margin: 0 auto;
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+.card_text {
+  color: black;
 }
 
 .experience_div1 {
