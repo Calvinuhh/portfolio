@@ -1,7 +1,20 @@
-import "./App.css";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
+import EnglishPage from "./views/EnglishPage";
+import SpanishPage from "./views/SpanishPage";
+
+import "./main.css";
 
 const App = () => {
-  return <></>;
+  return (
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<EnglishPage />}></Route>
+          <Route path="/ES" element={<SpanishPage />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
 };
 
 export default App;
