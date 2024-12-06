@@ -1,0 +1,30 @@
+{
+  "english": {
+    "route": "/ES",
+    "seniority_header": "Backend Junior Developer",
+    "languague_button": "ES",
+    "about_title": "About me",
+    "text1": "Junior Backend Developer, experience and projects in PERN and MERN Stack, JWT and Mercado Pago API , I am constantly updating myself about new trends and technologies in web development, constantly deepening the technologies that I already master, I consider that I can contribute great value in the Backend development, especially with Express.js since it is the framework with which I have practiced and developed projects the most.",
+    "text2": "I realized that the market increasingly demands more TypeScript, so I am working on projects like APIs in TypeScript to improve my skills and scalability of my applications.",
+    "strong": ["PERN", "MERN", "JWT", "Mercado Pago API"],
+    "technologies_title": "Technologies",
+    "experience_title": "Experience",
+    "education_title": "Education",
+    "projects_title": "Projects",
+    "licenses_title": "Licenses and Certifications"
+  },
+  "spanish": {
+    "route": "/",
+    "seniority_header": "Desarrollador Backend Junior",
+    "languague_button": "EN",
+    "about_title": "Sobre mi",
+    "text1": "Desarrollador Backend Junior, experiencia y proyectos en PERN y MERN Stack, JWT y API de Mercado Pago, constantemente me actualizo sobre nuevas tendencias y tecnologías en desarrollo web, profundizando constantemente en las tecnologías que ya domino, considero que puedo aportar gran valor en el desarrollo Backend, especialmente con Express.js ya que es el framework con el que más he practicado y desarrollado proyectos.",
+    "text2": "Me di cuenta de que el mercado cada vez exige más TypeScript, por lo que estoy trabajando en proyectos como APIs en TypeScript para mejorar mis habilidades y la escalabilidad de mis aplicaciones.",
+    "strong": ["PERN", "MERN", "JWT", "API de Mercado Pago"],
+    "technologies_title": "Tecnologias",
+    "experience_title": "Experiencia",
+    "education_title": "Educación",
+    "projects_title": "Proyectos",
+    "licenses_title": "Licencias y Certificaciones"
+  }
+}
