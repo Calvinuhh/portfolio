@@ -1,7 +1,9 @@
 import style from "./contactMail.module.css";
 
 const ContactMail = () => {
-  const clickMail = () => {};
+  const clickMail = () => {
+    console.log("Hello World!");
+  };
 
   return (
     <div className={style.container}>
