@@ -1,4 +1,4 @@
-import style from "./contactMail.module.css";
+import style from "./index.module.css";
 
 const ContactMail = () => {
   const clickMail = () => {

@@ -1,13 +1,10 @@
-import style from "./technologies.module.css";
+import TechnologiesInterface from "../../interfaces/technologies.interface";
+import style from "./index.module.css";
 
-const Technologies = ({
-  technologies_title,
-}: {
-  technologies_title: string;
-}) => {
+const Technologies = ({ title }: TechnologiesInterface) => {
   return (
     <div className={style.container}>
-      <h2 className={style.title}>{technologies_title}</h2>
+      <h2 className={style.title}>{title}</h2>
       <div className={style.images_container}>
         <img
           className={style.image}

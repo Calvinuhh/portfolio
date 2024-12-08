@@ -1,16 +1,11 @@
-import style from "./languagueButton.module.css";
+import HeaderInterface from "../../interfaces/header.interface";
+import style from "./index.module.css";
 import { Link } from "react-router-dom";
 
-const LanguagueButton = ({
-  languague_button,
-  route,
-}: {
-  languague_button: string;
-  route: string;
-}) => {
+const LanguagueButton = (props: Omit<HeaderInterface, "seniority">) => {
   return (
-    <Link className={style.link} to={route}>
-      {languague_button}
+    <Link className={style.link} to={props.route}>
+      {props.btn_text}
     </Link>
   );
 };

@@ -1,16 +1,9 @@
-import style from "./header.module.css";
+import style from "./index.module.css";
 import Contact from "../Contact/Contact";
 import LanguagueButton from "../LanguagueButton/LanguagueButton";
+import HeaderInterface from "../../interfaces/header.interface";
 
-const Header = ({
-  seniority_header,
-  languague_button,
-  route,
-}: {
-  seniority_header: string;
-  languague_button: string;
-  route: string;
-}) => {
+const Header = (props: HeaderInterface) => {
   return (
     <div className={style.container}>
       <div className={style.sub_container}>
@@ -21,7 +14,7 @@ const Header = ({
         />
         <div className={style.sub_container_info}>
           <h1 className={style.title}>Calvin Howard</h1>
-          <h2 className={style.name}>{seniority_header}</h2>
+          <h2 className={style.name}>{props.seniority}</h2>
           <div className={style.location_container}>
             <img
               className={style.location_logo}
@@ -34,7 +27,7 @@ const Header = ({
         </div>
       </div>
 
-      <LanguagueButton languague_button={languague_button} route={route} />
+      <LanguagueButton btn_text={props.btn_text} route={props.route} />
     </div>
   );
 };

@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+  background-color: red;
+}
+
+image {
+  width: 50px;
+}
+
+.image:hover {
+  cursor: pointer;
+}

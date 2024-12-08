@@ -1,4 +1,4 @@
-import style from "./socialIcons.module.css";
+import style from "./index.module.css";
 import { Link } from "react-router-dom";
 
 const SocialIcons = () => {

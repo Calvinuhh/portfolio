@@ -1,4 +1,4 @@
-import style from "./contact.module.css";
+import style from "./index.module.css";
 import SocialIcons from "./SocialIcons/SocialIcons";
 import ContactMail from "./ContactMail/ContactMail";
 
