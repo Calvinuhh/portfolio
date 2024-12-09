@@ -15,6 +15,9 @@ const Modal = ({
   text3,
   text4,
   ul_list,
+  cert1,
+  cert2,
+  cert3,
 }: Pick<
   SectionInterface,
   | "isModalOpen"
@@ -28,6 +31,9 @@ const Modal = ({
   | "text3"
   | "text4"
   | "ul_list"
+  | "cert1"
+  | "cert2"
+  | "cert3"
 >) => {
   const [isVisible, setIsVisible] = useState(isModalOpen);
 
@@ -227,6 +233,75 @@ const Modal = ({
             </div>
 
             <div className={style.text_contaier}>{text1}</div>
+          </div>
+        </div>
+      ) : null}
+
+      {cert1 ? (
+        <div
+          className={`${style.container_certificate} ${
+            isModalOpen ? style.open : style.close
+          }`}
+        >
+          <div className={style.certificate_container}>
+            <img
+              onClick={handleClose}
+              className={`${style.exit} ${style.exit_certificate}`}
+              src="https://res.cloudinary.com/deotitxt8/image/upload/v1733404613/portfolio/hwqbfqymekqgr1o8kx7m.png"
+              alt="exit_logo"
+            />
+          </div>
+          <div className={style.pdf_container}>
+            <iframe
+              className={style.pdf}
+              src="https://udemy-certificate.s3.amazonaws.com/pdf/UC-624ddf45-25c2-43a5-9c70-6d9890a23c41.pdf"
+            ></iframe>
+          </div>
+        </div>
+      ) : null}
+
+      {cert2 ? (
+        <div
+          className={`${style.container_certificate} ${
+            isModalOpen ? style.open : style.close
+          }`}
+        >
+          <div className={style.certificate_container}>
+            <img
+              onClick={handleClose}
+              className={`${style.exit} ${style.exit_certificate}`}
+              src="https://res.cloudinary.com/deotitxt8/image/upload/v1733404613/portfolio/hwqbfqymekqgr1o8kx7m.png"
+              alt="exit_logo"
+            />
+          </div>
+          <div className={style.pdf_container}>
+            <iframe
+              className={style.pdf}
+              src="https://udemy-certificate.s3.amazonaws.com/pdf/UC-03c1dfc1-71b0-49c1-9977-ca34849ea213.pdf"
+            ></iframe>
+          </div>
+        </div>
+      ) : null}
+
+      {cert3 ? (
+        <div
+          className={`${style.container_certificate} ${
+            isModalOpen ? style.open : style.close
+          }`}
+        >
+          <div className={style.certificate_container}>
+            <img
+              onClick={handleClose}
+              className={`${style.exit} ${style.exit_certificate}`}
+              src="https://res.cloudinary.com/deotitxt8/image/upload/v1733404613/portfolio/hwqbfqymekqgr1o8kx7m.png"
+              alt="exit_logo"
+            />
+          </div>
+          <div className={style.pdf_container}>
+            <iframe
+              className={style.pdf}
+              src="https://udemy-certificate.s3.amazonaws.com/pdf/UC-9e2458c2-cf77-485f-9e56-24727e5809ec.pdf"
+            ></iframe>
           </div>
         </div>
       ) : null}

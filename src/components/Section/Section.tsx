@@ -21,6 +21,9 @@ const Section = ({
   text3,
   text4,
   ul_list,
+  cert1,
+  cert2,
+  cert3,
 }: Omit<SectionInterface, "isModalOpen" | "setIsModalOpen">) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -28,6 +31,9 @@ const Section = ({
     <div className={style.container}>
       {title ? <h2 className={style.title}>{title}</h2> : null}
       <SectionContent
+        cert1={cert1}
+        cert2={cert2}
+        cert3={cert3}
         setIsModalOpen={setIsModalOpen}
         corp={corp}
         btn_text={btn_text}
@@ -40,6 +46,9 @@ const Section = ({
         mcs={mcs}
         henry={henry}
         sena={sena}
+        cert1={cert1}
+        cert2={cert2}
+        cert3={cert3}
         text1={text1}
         text2={text2}
         text3={text3}

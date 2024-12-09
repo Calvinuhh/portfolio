@@ -2,10 +2,10 @@ export default interface SectionInterface {
   isModalOpen: boolean;
   setIsModalOpen: Function;
   title?: string;
+  date_range?: string;
   modal_title?: string;
   corp: string;
   btn_text: string;
-  date_range: string;
   position: string;
   description: string;
   mcs?: boolean;
@@ -16,4 +16,7 @@ export default interface SectionInterface {
   text3?: string;
   text4?: string;
   ul_list?: Array<string>;
+  cert1?: boolean;
+  cert2?: boolean;
+  cert3?: boolean;
 }

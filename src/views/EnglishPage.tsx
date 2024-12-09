@@ -5,6 +5,7 @@ import Header from "../components/Header/Header";
 import AboutMe from "../components/AboutMe/AboutMe";
 import Technologies from "../components/Technologies/Technologies";
 import Section from "../components/Section/Section";
+import Projects from "../components/Projects/Projects";
 
 const EnglishPage = () => {
   useEffect(() => {
@@ -65,6 +66,43 @@ const EnglishPage = () => {
         modal_title="Main technologies:"
         sena={true}
         text1="Currently doing a Technical Program in Software Programming at SENA, Colombia, focusing on foundational programming concepts, computational logic, and core computer science principles. Gaining hands-on experience with Java for software development, exploring database management and design, and understanding agile methodologies such as Scrum. This program emphasizes practical problem-solving and prepares for real-world software development challenges."
+      />
+
+      <Projects
+        main_title="Projects"
+        mule={[
+          "MULE",
+          "Final academic project of the bootcamp 'Soy Henry' implementing all the technologies learned. Full Stack web application, the application is about a parcel company called Mule a company that offers 4 package delivery services in 5 provinces of Argentina.",
+        ]}
+        test={[
+          "Technical Test Comics",
+          "Technical test carried out, Development of a Full Stack web application, calling the Comic Vines API, saving comics in the database, list and grid view, in the repository there is all the documentation on how to start the project locally, both with MongoDB and with PostgreSQL.",
+        ]}
+      />
+
+      <Section
+        title="Licenses and Certifications"
+        btn_text="Certificate"
+        corp="Udemy"
+        position="Node.js - Web Development, MVC y REST APIs"
+        description="Course focused on Node.js, MVC, REST APIs, ORMs"
+        cert1={true}
+      />
+
+      <Section
+        btn_text="Certificate"
+        corp="Udemy"
+        position="Master in javascript, learn Node, jquery, Angular, TypeScript"
+        description="Course focused on learning the basics of JavaScript, programming logic, and technologies and frameworks derived from JavaScript and TypeScript."
+        cert2={true}
+      />
+
+      <Section
+        btn_text="Certificate"
+        corp="Udemy"
+        position="C# Complete Course to be a .NET developer"
+        description="Course focused on computing and programming fundamentals, programming logic, object-oriented programming with C#"
+        cert3={true}
       />
 
       <Footer />
