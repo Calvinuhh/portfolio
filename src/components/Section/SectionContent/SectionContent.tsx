@@ -3,22 +3,24 @@ import DateRage from "../../DateRange/DateRange";
 import ModalBtn from "../../ModalBtn/ModalBtn";
 import SectionInterface from "../../../interfaces/section.interface";
 
-const SectionContent = (
-  props: Omit<SectionInterface, "title" | "isModalOpen">
-) => {
+const SectionContent = ({
+  corp,
+  btn_text,
+  date_range,
+  description,
+  position,
+  setIsModalOpen,
+}: Omit<SectionInterface, "title" | "isModalOpen">) => {
   return (
     <div className={style.container}>
       <div className={style.title_date_container}>
-        <h2 className={style.title}>{props.corp}</h2>
-        <DateRage date_range={props.date_range} />
+        <h2 className={style.title}>{corp}</h2>
+        <DateRage date_range={date_range} />
       </div>
       <div className={style.description_container}>
-        <h3>{props.position}</h3>
-        <p className={style.text}>{props.description}</p>
-        <ModalBtn
-          btn_text={props.btn_text}
-          setIsModalOpen={props.setIsModalOpen}
-        />
+        <h3>{position}</h3>
+        <p className={style.text}>{description}</p>
+        <ModalBtn btn_text={btn_text} setIsModalOpen={setIsModalOpen} />
       </div>
     </div>
   );

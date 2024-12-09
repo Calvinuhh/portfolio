@@ -1,23 +1,53 @@
 import style from "./index.module.css";
+import { useState } from "react";
 import SectionContent from "./SectionContent/SectionContent";
 import SectionInterface from "../../interfaces/section.interface";
 import Modal from "../Modal/Modal";
+import BackDrop from "../BackDrop/BackDrop";
 
-const Section = (props: SectionInterface) => {
+const Section = ({
+  title,
+  corp,
+  btn_text,
+  date_range,
+  description,
+  position,
+  modal_title,
+  mcs,
+  henry,
+  sena,
+  text1,
+  text2,
+  text3,
+  text4,
+  ul_list,
+}: Omit<SectionInterface, "isModalOpen" | "setIsModalOpen">) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className={style.container}>
-      {props.title ? <h2 className={style.title}>{props.title}</h2> : null}
+      {title ? <h2 className={style.title}>{title}</h2> : null}
       <SectionContent
-        setIsModalOpen={props.setIsModalOpen}
-        corp={props.corp}
-        btn_text={props.btn_text}
-        date_range={props.date_range}
-        position={props.position}
-        description={props.description}
+        setIsModalOpen={setIsModalOpen}
+        corp={corp}
+        btn_text={btn_text}
+        date_range={date_range}
+        position={position}
+        description={description}
       />
+      <BackDrop isVisible={isModalOpen} />
       <Modal
-        isModalOpen={props.isModalOpen}
-        setIsModalOpen={props.setIsModalOpen}
+        mcs={mcs}
+        henry={henry}
+        sena={sena}
+        text1={text1}
+        text2={text2}
+        text3={text3}
+        text4={text4}
+        ul_list={ul_list}
+        isModalOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen}
+        modal_title={modal_title}
       />
     </div>
   );

@@ -1,7 +1,7 @@
 import AboutMeInterface from "../../interfaces/aboutMe.interface";
 import style from "./index.module.css";
 
-const AboutMe = (props: AboutMeInterface) => {
+const AboutMe = ({ title, strong, text1, text2 }: AboutMeInterface) => {
   const escapeRegExp = (string: string) =>
     string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
@@ -15,13 +15,11 @@ const AboutMe = (props: AboutMeInterface) => {
   };
   return (
     <div className={style.container}>
-      <h2 className={style.title}>{props.title}</h2>
+      <h2 className={style.title}>{title}</h2>
       <div className={style.sub_container}>
-        <p className={style.text}>
-          {highlightWords(props.text1, props.strong)}
-        </p>
+        <p className={style.text}>{highlightWords(text1, strong)}</p>
         <br />
-        <p className={style.text}>{props.text2}</p>
+        <p className={style.text}>{text2}</p>
       </div>
     </div>
   );
