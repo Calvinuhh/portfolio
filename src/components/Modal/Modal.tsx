@@ -2,6 +2,8 @@ import style from "./index.module.css";
 import SectionInterface from "../../interfaces/section.interface";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Form from "../Form/Form";
+import BackDrop from "../BackDrop/BackDrop";
 
 const Modal = ({
   isModalOpen,
@@ -18,6 +20,7 @@ const Modal = ({
   cert1,
   cert2,
   cert3,
+  formModal,
 }: Pick<
   SectionInterface,
   | "isModalOpen"
@@ -34,6 +37,8 @@ const Modal = ({
   | "cert1"
   | "cert2"
   | "cert3"
+  | "formModal"
+  | "children"
 >) => {
   const [isVisible, setIsVisible] = useState(isModalOpen);
 
@@ -49,6 +54,33 @@ const Modal = ({
   if (!isVisible) return null;
   return (
     <div>
+      <BackDrop isVisible={isModalOpen} />
+      {formModal ? (
+        <div
+          className={`${style.container_form} ${
+            isModalOpen ? style.open : style.close
+          }`}
+        >
+          <div className={style.sub_container}>
+            <div className={style.techs_container}>
+              <div className={style.title_container}>
+                <h2>{modal_title}</h2>
+              </div>
+              <img
+                onClick={handleClose}
+                className={style.exit}
+                src="https://res.cloudinary.com/deotitxt8/image/upload/v1733404613/portfolio/hwqbfqymekqgr1o8kx7m.png"
+                alt="exit_logo"
+              />
+            </div>
+
+            <div className={style.content_container}>
+              <Form closeModal={handleClose} />
+            </div>
+          </div>
+        </div>
+      ) : null}
+
       {mcs ? (
         <div
           className={`${style.container} ${

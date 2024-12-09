@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 const SpanishPage = () => {
   useEffect(() => {
-    document.title = "Portafolio Calvin Howard";
+    document.title = "Portafolio Calvin Howard | Español";
   }, []);
 
   return <></>;

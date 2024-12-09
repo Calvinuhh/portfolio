@@ -9,7 +9,7 @@ import Projects from "../components/Projects/Projects";
 
 const EnglishPage = () => {
   useEffect(() => {
-    document.title = "Portfolio Calvin Howard";
+    document.title = "Portfolio Calvin Howard | English";
   }, []);
 
   return (

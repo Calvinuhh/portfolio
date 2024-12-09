@@ -19,4 +19,6 @@ export default interface SectionInterface {
   cert1?: boolean;
   cert2?: boolean;
   cert3?: boolean;
+  formModal?: boolean;
+  children?: React.ReactNode;
 }

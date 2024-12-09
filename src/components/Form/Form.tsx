@@ -5,38 +5,41 @@ import Swal from "sweetalert2";
 
 const { VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY } = import.meta.env;
 
-const Form = () => {
+interface FormProps {
+  closeModal: () => void;
+}
+
+const Form = ({ closeModal }: FormProps) => {
   const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (form.current) {
-      emailjs
-        .sendForm(
+      try {
+        await emailjs.sendForm(
           VITE_SERVICE_ID,
           VITE_TEMPLATE_ID,
           form.current,
           VITE_PUBLIC_KEY
-        )
-        .then(
-          () => {
-            Swal.fire({
-              title: "Sent!",
-              text: "Message sent successfully",
-              icon: "success",
-              confirmButtonText: "Accept",
-            });
-          },
-          () => {
-            Swal.fire({
-              title: "Error",
-              text: "There was a problem sending the message. Please try again.",
-              icon: "error",
-              confirmButtonText: "Accept",
-            });
-          }
         );
+
+        Swal.fire({
+          title: "Sent!",
+          text: "Message sent successfully",
+          icon: "success",
+          confirmButtonText: "Accept",
+        }).then(() => {
+          closeModal();
+        });
+      } catch (error) {
+        Swal.fire({
+          title: "Error",
+          text: "There was a problem sending the message. Please try again.",
+          icon: "error",
+          confirmButtonText: "Accept",
+        });
+      }
     }
   };
 
