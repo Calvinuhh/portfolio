@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 
 const { VITE_SERVICE_ID, VITE_TEMPLATE_ID, VITE_PUBLIC_KEY } = import.meta.env;
 
-interface FormProps {
+export interface FormProps {
   closeModal: () => void;
 }
 
