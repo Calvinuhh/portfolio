@@ -1,7 +1,7 @@
 import TechnologiesInterface from "../../interfaces/technologies.interface";
 import style from "./index.module.css";
 
-const Technologies = ({ title }: TechnologiesInterface) => {
+const Technologies = ({ title, text }: TechnologiesInterface) => {
   return (
     <div className={style.container}>
       <h2 className={style.title}>{title}</h2>
@@ -76,6 +76,15 @@ const Technologies = ({ title }: TechnologiesInterface) => {
           src="https://cdn.iconscout.com/icon/free/png-256/free-react-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-icons-1175110.png?f=webp&w=256"
           alt="react_logo"
         />
+      </div>
+
+      <div className={style.github_container}>
+        <img
+          className={style.github_stats}
+          src="https://github-readme-stats.vercel.app/api/top-langs?username=calvinuhh&show_icons=true&locale=en&layout=compact"
+          alt="github_stats"
+        />
+        <p className={style.github_text}>{text}</p>
       </div>
     </div>
   );

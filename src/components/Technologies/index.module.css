@@ -14,6 +14,25 @@
   justify-content: center;
   gap: 20px;
   margin: 0 auto;
+  margin-bottom: 90px;
+}
+
+.github_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.github_stats {
+  width: 300px;
+}
+
+.github_text {
+  color: white;
+  font-family: var(--fonts);
+  text-align: center;
 }
 
 .title {

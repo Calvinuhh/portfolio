@@ -21,7 +21,7 @@ const EnglishPage = () => {
         text2="I realized that the market increasingly demands more TypeScript, so I am working on projects like APIs in TypeScript to improve my skills and scalability of my applications."
         strong={["PERN", "MERN", "JWT", "Mercado Pago API"]}
       />
-      <Technologies title="Technologies" />
+      <Technologies title="Technologies" text="Taken from GitHub stats" />
 
       <Section
         title="Experience"
