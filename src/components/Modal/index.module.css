@@ -51,7 +51,7 @@
   width: 1300px;
   justify-content: space-between;
   position: fixed;
-  top: 10%;
+  top: 7%;
   left: 14%;
   background-color: transparent;
   padding: 10px;
@@ -65,8 +65,8 @@
   width: 1300px;
   justify-content: space-between;
   position: fixed;
-  top: 10%;
-  left: 20%;
+  top: 5%;
+  left: 12%;
   background-color: transparent;
   padding: 10px;
   z-index: 2;

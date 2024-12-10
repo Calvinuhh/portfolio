@@ -38,31 +38,38 @@ const Form = ({ closeModal }: FormProps) => {
           text: "There was a problem sending the message. Please try again.",
           icon: "error",
           confirmButtonText: "Accept",
+        }).then(() => {
+          closeModal();
         });
       }
     }
   };
 
   return (
-    <>
-      <form ref={form} onSubmit={sendEmail}>
+    <div className={style.container}>
+      <h1>Send me a message!</h1>
+      <form className={style.formEmailjs} ref={form} onSubmit={sendEmail}>
         <label htmlFor="name">Name: </label>
-        <input type="text" className={style.name_input} name="name" required />
+        <input type="text" className={style.input} name="name" required />
 
         <label htmlFor="surname">Surname: </label>
-        <input
-          type="text"
-          className={style.surname_input}
-          name="surname"
+        <input type="text" className={style.input} name="surname" required />
+
+        <label htmlFor="email">Email: </label>
+        <input type="email" className={style.input} name="email" required />
+
+        <label htmlFor="message">Message:</label>
+        <textarea
+          className={`${style.input} ${style.message}`}
+          name="message"
           required
         />
 
-        <label htmlFor="message">Message:</label>
-        <textarea className={style.message_input} name="message" required />
-
-        <button type="submit">Enviar</button>
+        <button className={style.btn} type="submit">
+          Send
+        </button>
       </form>
-    </>
+    </div>
   );
 };
 
