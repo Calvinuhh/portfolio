@@ -19,6 +19,7 @@
   border-radius: 7px;
   font-family: var(--fonts);
   font-size: 20px;
+  padding: 6px;
 }
 
 label {
