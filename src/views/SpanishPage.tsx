@@ -16,12 +16,12 @@ const SpanishPage = () => {
     <>
       <Header
         btn_text="EN"
-        seniority="Desarrollador Backend Junior"
+        seniority="Desarrollador Backend || Desarrollador Full Stack"
         route="/"
       />
       <AboutMe
         title="Sobre mi"
-        text1="Desarrollador Backend Junior, experiencia y proyectos en PERN y MERN Stack, JWT y API de Mercado Pago, constantemente me actualizo sobre nuevas tendencias y tecnologías en desarrollo web, profundizando constantemente en las tecnologías que ya domino, considero que puedo aportar gran valor en el desarrollo Backend, especialmente con Express.js ya que es el framework con el que más he practicado y desarrollado proyectos."
+        text1="Desarrollador Backend con experiencia y proyectos en el stack PERN y MERN, JWT y API de Mercado Pago, considero que puedo aportar gran valor en el desarrollo Backend, especialmente con Express.js ya que es el framework con el que más he practicado y desarrollado proyectos."
         text2="Me di cuenta de que el mercado cada vez exige más TypeScript, por lo que estoy trabajando en proyectos como APIs en TypeScript para mejorar mis habilidades y la escalabilidad de mis aplicaciones."
         strong={["PERN", "MERN", "JWT", "API de Mercado Pago"]}
       />
@@ -34,7 +34,7 @@ const SpanishPage = () => {
         title="Experiencia"
         corp="My Cleaning Solutions"
         btn_text="Detalles"
-        date_range="dic. 2023 - ene. 2024"
+        date_range="DIC. 2023 - ENE. 2024"
         position="Desarrollador Web (freelance)"
         description="Desarrollo de un sitio web para una empresa de limpieza en Estados Unidos con el framework Astro"
         modal_title="Tecnologias principales:"
@@ -50,11 +50,24 @@ const SpanishPage = () => {
         text3="Utilicé Render, como servicio gratuito, que me sirvió para entender a un nivel básico cuál es la dinámica para desplegar una página web estática."
         text4="Puedes ver la página haciendo clic en el enlace de abajo."
       />
+
+      <Projects
+        main_title="Proyectos"
+        mule={[
+          "MULE",
+          "Proyecto académico final del bootcamp 'Soy Henry' implementando todas las tecnologías aprendidas. Aplicación web Full Stack, la aplicación trata sobre una empresa de paquetería llamada Mule una empresa que ofrece 4 servicios de entrega de paquetes en 5 provincias de Argentina.",
+        ]}
+        test={[
+          "Prueba técnica Comics",
+          "Prueba técnica realizada, Desarrollo de una aplicación web Full Stack, llamando a la API Comic Vines, guardando los comics en la base de datos, vista de lista y cuadrícula, en el repositorio se encuentra toda la documentación de como iniciar el proyecto en local, tanto con MongoDB como con PostgreSQL.",
+        ]}
+      />
+
       <Section
         title="Educacion"
         corp="Soy Henry"
         btn_text="Detalles"
-        date_range="oct. 2023 - jun. 2024"
+        date_range="OCT. 2023 - JUN. 2024"
         position="Full Stack Developer Bootcamp"
         description="Bootcamp de programación enfocado en tecnologías javascript como Node.js, React y Express."
         modal_title="Tecnologias principales:"
@@ -67,24 +80,12 @@ const SpanishPage = () => {
       <Section
         corp="Servicio Nacional de Aprendizaje (SENA)"
         btn_text="Detalles"
-        date_range="sep. 2024 - actualmente"
+        date_range="SEP. 2024 - ACTUALMENTE"
         position="Técnico en Programación de Software"
         description="Carrera técnica enfocada al aprendizaje de lenguajes de programación, herramientas de desarrollo web, frontend, backend, bases de datos, metodologías ágiles"
         modal_title="Tecnologías principales:"
         sena={true}
         text1="Actualmente estoy cursando un Programa Técnico en Programación de Software en el SENA, Colombia, enfocándome en conceptos básicos de programación, lógica computacional y principios básicos de la informática. Adquirí experiencia práctica con Java para el desarrollo de software, explorando la gestión y el diseño de bases de datos y comprendiendo metodologías ágiles como Scrum. Este programa enfatiza la resolución práctica de problemas y te prepara para los desafíos del desarrollo de software del mundo real."
-      />
-
-      <Projects
-        main_title="Proyectos"
-        mule={[
-          "MULE",
-          "Proyecto académico final del bootcamp 'Soy Henry' implementando todas las tecnologías aprendidas. Aplicación web Full Stack, la aplicación trata sobre una empresa de paquetería llamada Mule una empresa que ofrece 4 servicios de entrega de paquetes en 5 provincias de Argentina.",
-        ]}
-        test={[
-          "Prueba técnica Comics",
-          "Prueba técnica realizada, Desarrollo de una aplicación web Full Stack, llamando a la API Comic Vines, guardando los comics en la base de datos, vista de lista y cuadrícula, en el repositorio se encuentra toda la documentación de como iniciar el proyecto en local, tanto con MongoDB como con PostgreSQL.",
-        ]}
       />
 
       <Section

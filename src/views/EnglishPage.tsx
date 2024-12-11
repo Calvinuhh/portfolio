@@ -14,10 +14,14 @@ const EnglishPage = () => {
 
   return (
     <>
-      <Header btn_text="ES" seniority="Backend Junior Developer" route="/es" />
+      <Header
+        btn_text="ES"
+        seniority="Backend Developer || Full Stack Developer"
+        route="/es"
+      />
       <AboutMe
         title="About me"
-        text1="Junior Backend Developer, experience and projects in PERN and MERN Stack, JWT and Mercado Pago API , I am constantly updating myself about new trends and technologies in web development, constantly deepening the technologies that I already master, I consider that I can contribute great value in the Backend development, especially with Express.js since it is the framework with which I have practiced and developed projects the most."
+        text1="Backend Developer with experience and projects in PERN and MERN Stack, JWT and Mercado Pago API, I consider that I can contribute great value in the Backend development, especially with Express.js since it is the framework with which I have practiced and developed projects the most."
         text2="I realized that the market increasingly demands more TypeScript, so I am working on projects like APIs in TypeScript to improve my skills and scalability of my applications."
         strong={["PERN", "MERN", "JWT", "Mercado Pago API"]}
       />
@@ -27,7 +31,7 @@ const EnglishPage = () => {
         title="Experience"
         corp="My Cleaning Solutions"
         btn_text="Details"
-        date_range="dec. 2023 - jan. 2024"
+        date_range="DEC. 2023 - JAN. 2024"
         position="Web Developer (freelance work)"
         description="Development of a website for a cleaning company in United States with the framework Astro"
         modal_title="Main technologies:"
@@ -43,11 +47,24 @@ const EnglishPage = () => {
         text3="I used Render , as free service, which served to understand at a basic level what the dynamics are for deploying a static web page."
         text4="You can check out the page by clicking the link below."
       />
+
+      <Projects
+        main_title="Projects"
+        mule={[
+          "MULE",
+          "Final academic project of the bootcamp 'Soy Henry' implementing all the technologies learned. Full Stack web application, the application is about a parcel company called Mule a company that offers 4 package delivery services in 5 provinces of Argentina.",
+        ]}
+        test={[
+          "Technical Test Comics",
+          "Technical test carried out, Development of a Full Stack web application, calling the Comic Vines API, saving comics in the database, list and grid view, in the repository there is all the documentation on how to start the project locally, both with MongoDB and with PostgreSQL.",
+        ]}
+      />
+
       <Section
         title="Education"
         corp="Soy Henry"
         btn_text="Details"
-        date_range="oct. 2023 - jun. 2024"
+        date_range="OCT. 2023 - JUN. 2024"
         position="Full Stack Developer Bootcamp"
         description="Programming bootcamp focused on javascript technologies such as Node.js, React and Express."
         modal_title="Main technologies:"
@@ -60,24 +77,12 @@ const EnglishPage = () => {
       <Section
         corp="National Learning Service (SENA)"
         btn_text="Details"
-        date_range="sep. 2024 - currently"
+        date_range="SEP. 2024 - CURRENTLY"
         position="Software Programming Technician"
         description="Technical career focused on learning programming languages, web development tools, frontend, backend, databases, agile methodologies"
         modal_title="Main technologies:"
         sena={true}
         text1="Currently doing a Technical Program in Software Programming at SENA, Colombia, focusing on foundational programming concepts, computational logic, and core computer science principles. Gaining hands-on experience with Java for software development, exploring database management and design, and understanding agile methodologies such as Scrum. This program emphasizes practical problem-solving and prepares for real-world software development challenges."
-      />
-
-      <Projects
-        main_title="Projects"
-        mule={[
-          "MULE",
-          "Final academic project of the bootcamp 'Soy Henry' implementing all the technologies learned. Full Stack web application, the application is about a parcel company called Mule a company that offers 4 package delivery services in 5 provinces of Argentina.",
-        ]}
-        test={[
-          "Technical Test Comics",
-          "Technical test carried out, Development of a Full Stack web application, calling the Comic Vines API, saving comics in the database, list and grid view, in the repository there is all the documentation on how to start the project locally, both with MongoDB and with PostgreSQL.",
-        ]}
       />
 
       <Section
