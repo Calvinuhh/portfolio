@@ -22,7 +22,7 @@ const SpanishPage = () => {
       <AboutMe
         title="Sobre mi"
         text1="Desarrollador Backend con experiencia y proyectos en el stack PERN y MERN, JWT y API de Mercado Pago, considero que puedo aportar gran valor en el desarrollo Backend, especialmente con Express.js ya que es el framework con el que más he practicado y desarrollado proyectos."
-        text2="Me di cuenta de que el mercado cada vez exige más TypeScript, por lo que estoy trabajando en proyectos como APIs en TypeScript para mejorar mis habilidades y la escalabilidad de mis aplicaciones."
+        text2="Actualmente para manejar aplicaciones escalables y robustas estoy trabajando en proyectos como APIs en TypeScript para mejorar mis habilidades y la escalabilidad de mis aplicaciones."
         strong={["PERN", "MERN", "JWT", "API de Mercado Pago"]}
       />
       <Technologies
