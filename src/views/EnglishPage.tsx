@@ -22,7 +22,7 @@ const EnglishPage = () => {
       <AboutMe
         title="About me"
         text1="Backend Developer with experience and projects in PERN and MERN Stack, JWT and Mercado Pago API, I consider that I can contribute great value in the Backend development, especially with Express.js since it is the framework with which I have practiced and developed projects the most."
-        text2="I realized that the market increasingly demands more TypeScript, so I am working on projects like APIs in TypeScript to improve my skills and scalability of my applications."
+        text2="Currently, to manage scalable and robust applications, I am working on projects such as APIs in TypeScript to improve my skills and the scalability of my applications."
         strong={["PERN", "MERN", "JWT", "Mercado Pago API"]}
       />
       <Technologies title="Technologies" text="Taken from GitHub stats" />
