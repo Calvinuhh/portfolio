@@ -1,5 +1,5 @@
 import style from "./index.module.css";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 
@@ -11,11 +11,13 @@ export interface FormProps {
 
 const Form = ({ closeModal }: FormProps) => {
   const form = useRef<HTMLFormElement>(null);
+  const [isSending, setIsSending] = useState(false);
 
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (form.current) {
+      setIsSending(true);
       try {
         await emailjs.sendForm(
           VITE_SERVICE_ID,
@@ -41,6 +43,8 @@ const Form = ({ closeModal }: FormProps) => {
         }).then(() => {
           closeModal();
         });
+      } finally {
+        setIsSending(false);
       }
     }
   };
@@ -65,8 +69,8 @@ const Form = ({ closeModal }: FormProps) => {
           required
         />
 
-        <button className={style.btn} type="submit">
-          Send
+        <button className={style.btn} type="submit" disabled={isSending}>
+          {isSending ? "Sending..." : "Send"}
         </button>
       </form>
     </div>

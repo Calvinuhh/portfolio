@@ -23,6 +23,7 @@ const Technologies = ({ title, text }: TechnologiesInterface) => {
         />
         <img
           className={style.image}
+          id={style.css_logo}
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png"
           alt="css3_logo"
         />
