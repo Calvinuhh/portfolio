@@ -13,7 +13,9 @@ const SectionContent = ({
   cert1,
   cert2,
   cert3,
-}: Omit<SectionInterface, "isModalOpen">) => {
+  cert4,
+}: // cert5,
+Omit<SectionInterface, "isModalOpen">) => {
   return (
     <div className={style.container}>
       <div className={style.title_date_container}>
@@ -131,6 +133,42 @@ const SectionContent = ({
         ) : null}
 
         {cert3 ? (
+          <div className={style.images_container}>
+            <img
+              className={style.image}
+              src="https://miro.medium.com/v2/resize:fit:440/1*J3G3akaMpUOLegw0p0qthA.png"
+              alt="apirest_logo"
+            />
+
+            <img
+              className={style.image}
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/2560px-Node.js_logo_2015.svg.png"
+              alt="node_logo"
+            />
+            <img
+              className={style.image}
+              src="https://keenethics.com/wp-content/uploads/2021/10/Express.js.svg"
+              alt="express_logo"
+            />
+            <img
+              className={style.image}
+              src="https://cdn.iconscout.com/icon/free/png-256/free-mongodb-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-icons-1175140.png?f=webp"
+              alt="mongodb_logo"
+            />
+            <img
+              className={style.image}
+              src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F99177233598415E22A"
+              alt="mongoose_logo"
+            />
+            <img
+              className={style.image}
+              src="https://res.cloudinary.com/deotitxt8/image/upload/v1733404612/portfolio/so51nrmeyaxtwby5cewo.png"
+              alt="jwt_logo"
+            />
+          </div>
+        ) : null}
+
+        {cert4 ? (
           <div className={style.images_container}>
             <img
               className={style.image}

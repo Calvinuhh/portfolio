@@ -20,6 +20,8 @@ const Modal = ({
   cert1,
   cert2,
   cert3,
+  cert4,
+  // cert5,
   formModal,
 }: Pick<
   SectionInterface,
@@ -37,6 +39,8 @@ const Modal = ({
   | "cert1"
   | "cert2"
   | "cert3"
+  | "cert4"
+  | "cert5"
   | "formModal"
   | "children"
 >) => {
@@ -316,6 +320,29 @@ const Modal = ({
       ) : null}
 
       {cert3 ? (
+        <div
+          className={`${style.container_certificate} ${
+            isModalOpen ? style.open : style.close
+          }`}
+        >
+          <div className={style.certificate_container}>
+            <img
+              onClick={handleClose}
+              className={`${style.exit} ${style.exit_certificate}`}
+              src="https://res.cloudinary.com/deotitxt8/image/upload/v1733404613/portfolio/hwqbfqymekqgr1o8kx7m.png"
+              alt="exit_logo"
+            />
+          </div>
+          <div className={style.pdf_container}>
+            <iframe
+              className={style.pdf}
+              src="https://udemy-certificate.s3.amazonaws.com/pdf/UC-4cddfdee-2988-4f1e-a468-0378b7c4c732.pdf"
+            ></iframe>
+          </div>
+        </div>
+      ) : null}
+
+      {cert4 ? (
         <div
           className={`${style.container_certificate} ${
             isModalOpen ? style.open : style.close

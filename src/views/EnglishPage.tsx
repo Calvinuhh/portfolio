@@ -105,9 +105,17 @@ const EnglishPage = () => {
       <Section
         btn_text="Certificate"
         corp="Udemy"
+        position="Master en APIs REST con Node.js"
+        description="Course focused on the creation of APIs with REST architecture with Node using the Express.js framework, protected routes, authentication and authorization of users in different endpoints implementing middlewares"
+        cert3={true}
+      />
+
+      <Section
+        btn_text="Certificate"
+        corp="Udemy"
         position="C# Complete Course to be a .NET developer"
         description="Course focused on computing and programming fundamentals, programming logic, object-oriented programming with C#"
-        cert3={true}
+        cert4={true}
       />
 
       <Footer />

@@ -24,6 +24,8 @@ const Section = ({
   cert1,
   cert2,
   cert3,
+  cert4,
+  cert5,
 }: Omit<SectionInterface, "isModalOpen" | "setIsModalOpen">) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -34,6 +36,8 @@ const Section = ({
         cert1={cert1}
         cert2={cert2}
         cert3={cert3}
+        cert4={cert4}
+        cert5={cert5}
         setIsModalOpen={setIsModalOpen}
         corp={corp}
         btn_text={btn_text}
@@ -49,6 +53,8 @@ const Section = ({
         cert1={cert1}
         cert2={cert2}
         cert3={cert3}
+        cert4={cert4}
+        cert5={cert5}
         text1={text1}
         text2={text2}
         text3={text3}

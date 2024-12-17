@@ -104,13 +104,20 @@ const SpanishPage = () => {
         description="Curso enfocado en aprender los fundamentos de JavaScript, lógica de programación y tecnologías y frameworks derivados de JavaScript y TypeScript."
         cert2={true}
       />
+      <Section
+        btn_text="Certificate"
+        corp="Udemy"
+        position="Master en APIs REST con Node.js"
+        description="curso enfocado en la creacion de APIs con arquitectura REST con Node con el framework Express.js, rutas protegidas, autenticacion y autorizacion de usuarios en diferentes endpoints implementando middlewares"
+        cert3={true}
+      />
 
       <Section
         btn_text="Certificado"
         corp="Udemy"
         position="Curso completo de C# para ser desarrollador .NET"
         description="Curso enfocado en fundamentos de computación y programación, lógica de programación, programación orientada a objetos con C#"
-        cert3={true}
+        cert4={true}
       />
 
       <Footer />
