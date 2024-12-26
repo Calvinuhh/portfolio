@@ -58,6 +58,10 @@ const EnglishPage = () => {
           "Technical Test Comics",
           "Technical test carried out, Development of a Full Stack web application, calling the Comic Vines API, saving comics in the database, list and grid view, in the repository there is all the documentation on how to start the project locally, both with MongoDB and with PostgreSQL.",
         ]}
+        devtree={[
+          "DevTree",
+          "Practice project developing a LinkTree clone, login and registration, by the client and the server, authorization and authentication with json web token validations through form and server among other things",
+        ]}
       />
 
       <Section

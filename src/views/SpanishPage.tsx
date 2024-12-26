@@ -61,6 +61,10 @@ const SpanishPage = () => {
           "Prueba técnica Comics",
           "Prueba técnica realizada, Desarrollo de una aplicación web Full Stack, llamando a la API Comic Vines, guardando los comics en la base de datos, vista de lista y cuadrícula, en el repositorio se encuentra toda la documentación de como iniciar el proyecto en local, tanto con MongoDB como con PostgreSQL.",
         ]}
+        devtree={[
+          "DevTree",
+          "Proyecto de practica desarrollando un clon de LinkTree, login y registro, por parte del cliente y del servidor, autorizacion y autenticacion con json web token validaciones por medio de formulario y servidor entre otras cosas",
+        ]}
       />
 
       <Section
