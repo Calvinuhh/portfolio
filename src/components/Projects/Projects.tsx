@@ -87,7 +87,7 @@ const Projects = ({ main_title, mule, test, devtree }: ProjectsInterface) => {
           <div className={style.card_container_icons}>
             <Link
               target="_blank"
-              to="https://github.com/Calvinuhh/devtree_server"
+              to="https://github.com/Calvinuhh/devtree_readme"
             >
               <img
                 className={style.card_icon}
