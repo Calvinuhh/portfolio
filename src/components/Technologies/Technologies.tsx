@@ -28,6 +28,7 @@ const Technologies = ({ title, text }: TechnologiesInterface) => {
           alt="css3_logo"
         />
         <img
+          id={style.js_logo}
           className={style.image}
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png"
           alt="js_logo"
@@ -53,6 +54,7 @@ const Technologies = ({ title, text }: TechnologiesInterface) => {
           alt="mongodb_logo"
         />
         <img
+          id={style.mongoose_logo}
           className={style.image}
           src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F99177233598415E22A"
           alt="mongoose_logo"
@@ -76,6 +78,12 @@ const Technologies = ({ title, text }: TechnologiesInterface) => {
           className={style.image}
           src="https://cdn.iconscout.com/icon/free/png-256/free-react-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-icons-1175110.png?f=webp&w=256"
           alt="react_logo"
+        />
+        <img
+          id={style.tailwind_logo}
+          className={style.image}
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/512px-Tailwind_CSS_Logo.svg.png"
+          alt="tailwind_logo"
         />
       </div>
 

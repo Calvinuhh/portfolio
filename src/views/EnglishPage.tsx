@@ -62,6 +62,10 @@ const EnglishPage = () => {
           "DevTree",
           "Practice project developing a LinkTree clone, login and registration, by the client and the server, authorization and authentication with json web token validations through form and server among other things",
         ]}
+        REST_API={[
+          "REST API",
+          "CRM for clients, products and orders, project focused on the application of REST architecture for an Express server with MongoDB and Mongoose, validations of new resources, confirmation of new users via email, user authentication via JWT, protected routes, implementing a simple and striking view for easy interaction with the user.",
+        ]}
       />
 
       <Section

@@ -2,7 +2,13 @@ import style from "./index.module.css";
 import ProjectsInterface from "../../interfaces/projects.interface";
 import { Link } from "react-router-dom";
 
-const Projects = ({ main_title, mule, test, devtree }: ProjectsInterface) => {
+const Projects = ({
+  main_title,
+  mule,
+  test,
+  devtree,
+  REST_API,
+}: ProjectsInterface) => {
   return (
     <div className={style.container}>
       <h2 className={style.title}>{main_title}</h2>
@@ -64,13 +70,6 @@ const Projects = ({ main_title, mule, test, devtree }: ProjectsInterface) => {
                 alt="document_icon"
               />
             </Link>
-            <Link target="_blank" to="https://front-test-2pg1.onrender.com/">
-              <img
-                className={style.card_icon}
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Globe_icon.svg/768px-Globe_icon.svg.png"
-                alt="webpage_icon"
-              />
-            </Link>
           </div>
         </div>
 
@@ -97,6 +96,38 @@ const Projects = ({ main_title, mule, test, devtree }: ProjectsInterface) => {
             </Link>
 
             <Link target="_blank" to="https://devtree-client.onrender.com/">
+              <img
+                className={style.card_icon}
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Globe_icon.svg/768px-Globe_icon.svg.png"
+                alt="webpage_icon"
+              />
+            </Link>
+          </div>
+        </div>
+
+        <div className={style.card_container}>
+          <img
+            className={style.card_image}
+            src="https://res.cloudinary.com/deotitxt8/image/upload/v1736141134/portfolio/Screenshot_2025-01-06_001816_hnyr7q.png"
+            alt="mule_image"
+          />
+          <h2 className={style.card_title}>{REST_API[0]}</h2>
+          <div className={style.card_container_text}>
+            <p className={style.card_text}>{REST_API[1]}</p>
+          </div>
+
+          <div className={style.card_container_icons}>
+            <Link target="_blank" to="https://github.com/Calvinuhh/REST_API">
+              <img
+                className={style.card_icon}
+                src="https://res.cloudinary.com/deotitxt8/image/upload/v1733417591/portfolio/ihtebuqsqrrgvd6fjiev.png"
+                alt="repository_icon"
+              />
+            </Link>
+            <Link
+              target="_blank"
+              to="https://rest-api-client.onrender.com/register"
+            >
               <img
                 className={style.card_icon}
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Globe_icon.svg/768px-Globe_icon.svg.png"

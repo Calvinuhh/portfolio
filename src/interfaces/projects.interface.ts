@@ -3,4 +3,5 @@ export default interface ProjectsInterface {
   mule: string[];
   test: string[];
   devtree: string[];
+  REST_API: string[];
 }

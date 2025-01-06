@@ -79,6 +79,11 @@ Omit<SectionInterface, "isModalOpen">) => {
               src="https://res.cloudinary.com/deotitxt8/image/upload/v1733404612/portfolio/so51nrmeyaxtwby5cewo.png"
               alt="jwt_logo"
             />
+            <img
+              className={style.image}
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/512px-Tailwind_CSS_Logo.svg.png"
+              alt="tailwind_logo"
+            />
           </div>
         ) : null}
 
