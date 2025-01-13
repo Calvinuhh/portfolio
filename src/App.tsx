@@ -1,20 +1,12 @@
-import { Route, BrowserRouter, Routes } from "react-router-dom";
-import EnglishPage from "./views/EnglishPage";
-import SpanishPage from "./views/SpanishPage";
+import Layout from "./layouts/Layout";
+import Main from "./views/Main";
 
-import "./main.css";
-
-const App = () => {
+function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<EnglishPage />}></Route>
-          <Route path="/es" element={<SpanishPage />}></Route>
-        </Routes>
-      </BrowserRouter>
-    </>
+    <Layout>
+      <Main />
+    </Layout>
   );
-};
+}
 
 export default App;

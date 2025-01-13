@@ -1,143 +1,57 @@
-import style from "./index.module.css";
-import ProjectsInterface from "../../interfaces/projects.interface";
-import { Link } from "react-router-dom";
+import ProjectCard from "./ProjectCard";
 
-const Projects = ({
-  main_title,
-  mule,
-  test,
-  devtree,
-  REST_API,
-}: ProjectsInterface) => {
+const Projects = () => {
   return (
-    <div className={style.container}>
-      <h2 className={style.title}>{main_title}</h2>
+    <main className=" flex flex-col w-[1200px] mx-auto font-noto my-[100px] gap-[70px]">
+      <h2 className=" font-bold text-[24px] text-white">Proyectos</h2>
 
-      <div className={style.cards_container}>
-        <div className={style.card_container}>
-          <img
-            className={style.card_image}
-            src="https://res.cloudinary.com/deotitxt8/image/upload/v1733410254/portfolio/xk1vjwhvj7aleaunnhsf.png"
-            alt="mule_image"
-          />
-          <h2 className={style.card_title}>{mule[0]}</h2>
-          <div className={style.card_container_text}>
-            <p className={style.card_text}>{mule[1]}</p>
-          </div>
+      <div className=" flex flex-wrap justify-center gap-[100px]">
+        <ProjectCard
+          repo={true}
+          data={[
+            "https://res.cloudinary.com/deotitxt8/image/upload/v1733410254/portfolio/xk1vjwhvj7aleaunnhsf.png",
+            "MULE",
+            "Proyecto académico final del bootcamp 'Soy Henry' implementando todas las tecnologías aprendidas. Aplicación web Full Stack, la aplicación trata sobre una empresa de paquetería llamada Mule una empresa que ofrece 4 servicios de entrega de paquetes en 5 provincias de Argentina.",
+          ]}
+          repo_link="https://github.com/Calvinuhh/Mule-Backend"
+        />
+        <ProjectCard
+          repo={true}
+          doc={true}
+          data={[
+            "https://res.cloudinary.com/deotitxt8/image/upload/v1733410254/portfolio/tcmwnjwssagqrzfckj3u.png",
+            "Prueba tecnica Comics",
+            "Prueba técnica realizada, Desarrollo de una aplicación web Full Stack, llamando a la API Comic Vines, guardando los comics en la base de datos, vista de lista y cuadrícula, en el repositorio se encuentra toda la documentación de como iniciar el proyecto en local, tanto con MongoDB como con PostgreSQL.",
+          ]}
+          repo_link="https://github.com/Calvinuhh/prueba_tecnica_comics"
+          doc_link="https://drive.google.com/file/d/1wTCN8Qzpzy6HKoscK4No1s-88hD2ryOw/view"
+        />
 
-          <div className={style.card_container_icons}>
-            <Link
-              target="_blank"
-              to="https://github.com/Calvinuhh/Mule-Backend"
-            >
-              <img
-                className={style.card_icon}
-                src="https://res.cloudinary.com/deotitxt8/image/upload/v1733417591/portfolio/ihtebuqsqrrgvd6fjiev.png"
-                alt="repository_icon"
-              />
-            </Link>
-          </div>
-        </div>
+        <ProjectCard
+          repo={true}
+          web={true}
+          data={[
+            "https://res.cloudinary.com/deotitxt8/image/upload/v1735191435/portfolio/wfk1esefsnykiqkcf6qm.png",
+            "DevTree",
+            "Proyecto de practica desarrollando un clon de LinkTree, login y registro, por parte del cliente y del servidor, autorizacion y autenticacion con json web token validaciones por medio de formulario y servidor entre otras cosas",
+          ]}
+          repo_link="https://github.com/Calvinuhh/devtree_readme"
+          web_link="https://devtree-client.onrender.com/"
+        />
 
-        <div className={style.card_container}>
-          <img
-            className={style.card_image}
-            src="https://res.cloudinary.com/deotitxt8/image/upload/v1733410254/portfolio/tcmwnjwssagqrzfckj3u.png"
-            alt="mule_image"
-          />
-          <h2 className={style.card_title}>{test[0]}</h2>
-          <div className={style.card_container_text}>
-            <p className={style.card_text}>{test[1]}</p>
-          </div>
-          <div className={style.card_container_icons}>
-            <Link
-              target="_blank"
-              to="https://github.com/Calvinuhh/prueba_tecnica_comics"
-            >
-              <img
-                className={style.card_icon}
-                src="https://res.cloudinary.com/deotitxt8/image/upload/v1733417591/portfolio/ihtebuqsqrrgvd6fjiev.png"
-                alt="repository_icon"
-              />
-            </Link>
-            <Link
-              target="_blank"
-              to="https://drive.google.com/file/d/1wTCN8Qzpzy6HKoscK4No1s-88hD2ryOw/view"
-            >
-              <img
-                className={style.card_icon}
-                src="https://res.cloudinary.com/deotitxt8/image/upload/v1733418875/portfolio/gclghq8ol3x1rmfecgdw.png"
-                alt="document_icon"
-              />
-            </Link>
-          </div>
-        </div>
-
-        <div className={style.card_container}>
-          <img
-            className={style.card_image}
-            src="https://res.cloudinary.com/deotitxt8/image/upload/v1735191435/portfolio/wfk1esefsnykiqkcf6qm.png"
-            alt="linktree_image"
-          />
-          <h2 className={style.card_title}>{devtree[0]}</h2>
-          <div className={style.card_container_text}>
-            <p className={style.card_text}>{devtree[1]}</p>
-          </div>
-          <div className={style.card_container_icons}>
-            <Link
-              target="_blank"
-              to="https://github.com/Calvinuhh/devtree_readme"
-            >
-              <img
-                className={style.card_icon}
-                src="https://res.cloudinary.com/deotitxt8/image/upload/v1733417591/portfolio/ihtebuqsqrrgvd6fjiev.png"
-                alt="repository_icon"
-              />
-            </Link>
-
-            <Link target="_blank" to="https://devtree-client.onrender.com/">
-              <img
-                className={style.card_icon}
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Globe_icon.svg/768px-Globe_icon.svg.png"
-                alt="webpage_icon"
-              />
-            </Link>
-          </div>
-        </div>
-
-        <div className={style.card_container}>
-          <img
-            className={style.card_image}
-            src="https://res.cloudinary.com/deotitxt8/image/upload/v1736141134/portfolio/Screenshot_2025-01-06_001816_hnyr7q.png"
-            alt="mule_image"
-          />
-          <h2 className={style.card_title}>{REST_API[0]}</h2>
-          <div className={style.card_container_text}>
-            <p className={style.card_text}>{REST_API[1]}</p>
-          </div>
-
-          <div className={style.card_container_icons}>
-            <Link target="_blank" to="https://github.com/Calvinuhh/REST_API">
-              <img
-                className={style.card_icon}
-                src="https://res.cloudinary.com/deotitxt8/image/upload/v1733417591/portfolio/ihtebuqsqrrgvd6fjiev.png"
-                alt="repository_icon"
-              />
-            </Link>
-            <Link
-              target="_blank"
-              to="https://rest-api-client.onrender.com/register"
-            >
-              <img
-                className={style.card_icon}
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Globe_icon.svg/768px-Globe_icon.svg.png"
-                alt="webpage_icon"
-              />
-            </Link>
-          </div>
-        </div>
+        <ProjectCard
+          repo={true}
+          web={true}
+          data={[
+            "https://res.cloudinary.com/deotitxt8/image/upload/v1736141134/portfolio/Screenshot_2025-01-06_001816_hnyr7q.png",
+            "REST API",
+            "CRM de clientes, productos y ordenes, proyecto enfocado en la aplicacion de la arquitectura REST para un servidor de Express con MongoDB y Mongoose, validaciones de nuevos recursos, confirmacion de usuarios nuevos por medio de email, autenticacion de usuarios por medio de JWT, rutas protegidas, implementando una vista simple y llamativa para la facil interaccion con el usuario.",
+          ]}
+          repo_link="https://github.com/Calvinuhh/REST_API"
+          web_link="https://rest-api-client.onrender.com/register"
+        />
       </div>
-    </div>
+    </main>
   );
 };
 
