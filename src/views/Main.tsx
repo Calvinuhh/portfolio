@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import Technologies from "../components/Technologies";
 import Form from "../components/Form";
 import Experiences from "../components/experience/Experiences";
-import Projects from "../components/Projects/Projects";
+import Projects from "../components/projects/Projects";
 import Education from "../components/education/Education";
 import Certificates from "../components/certificates/Certificates";
 
