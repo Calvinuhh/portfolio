@@ -10,7 +10,7 @@ const Header = () => {
     <div className=" flex w-[1200px] mx-auto justify-between p-5 gap-[20px] text-white my-[100px] font-noto">
       <div className=" flex gap-[20px]">
         <img
-          className=" w-[200px] rounded-[50%]"
+          className=" w-[210px] rounded-[50%]"
           src="https://res.cloudinary.com/deotitxt8/image/upload/v1733404612/portfolio/uowrytsl83v75ieoj9hq.jpg"
           alt="cv_logo"
         />
