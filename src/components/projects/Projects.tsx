@@ -47,7 +47,7 @@ const Projects = () => {
             "REST API",
             "CRM de clientes, productos y ordenes, proyecto enfocado en la aplicacion de la arquitectura REST para un servidor de Express con MongoDB y Mongoose, validaciones de nuevos recursos, confirmacion de usuarios nuevos por medio de email, autenticacion de usuarios por medio de JWT, rutas protegidas, implementando una vista simple y llamativa para la facil interaccion con el usuario.",
           ]}
-          repo_link="https://github.com/Calvinuhh/REST_API"
+          repo_link="https://github.com/Calvinuhh/REST_API_readme"
           web_link="https://rest-api-client.onrender.com/register"
         />
       </div>
