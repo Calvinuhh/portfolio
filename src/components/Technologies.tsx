@@ -62,12 +62,12 @@ const Technologies = () => {
         />
         <img
           className=" w-[100px] h-[100px] transition-all duration-[0.2s] ease-out hover:scale-[1.3]"
-          src="https://cdn.icon-icons.com/icons2/2415/PNG/512/postgresql_original_wordmark_logo_icon_146392.png"
+          src="https://res.cloudinary.com/deotitxt8/image/upload/v1738689627/portfolio/vuo6yvkonmr9hlmdmwvy.png"
           alt="postgresql_logo"
         />
         <img
-          className=" w-[100px] h-[100px] transition-all duration-[0.2s] ease-out hover:scale-[1.3]"
-          src="https://cdn.icon-icons.com/icons2/2415/PNG/512/sequelize_original_logo_icon_146348.png"
+          className=" w-[130px] h-[100px] transition-all duration-[0.2s] ease-out hover:scale-[1.3]"
+          src="https://res.cloudinary.com/deotitxt8/image/upload/v1738689779/portfolio/pwdivzo10lo32nezzygw.png"
           alt="sequelize_logo"
         />
         <img
