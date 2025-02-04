@@ -10,7 +10,7 @@ const ExperienceSection = () => {
           data={[
             "https://res.cloudinary.com/deotitxt8/image/upload/v1736704299/portfolio/1630642122462_luenn0.jpg",
             "Pasante Desarrollador",
-            "TINegocios",
+            "TiNegocios",
             "ene. 2025 - actualmente",
             "Remoto",
             "Pasantia de desarrollo web en una empresa de tecnologia en Mexico",
