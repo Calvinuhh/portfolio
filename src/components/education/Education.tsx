@@ -21,7 +21,7 @@ const Education = () => {
             "Servicio Nacional de Aprendizaje (SENA)",
             "sep. 2024 - actualmente",
             "Tecnico en programacion de software",
-            "Carrera técnica enfocada al aprendizaje de lenguajes de programación, herramientas de desarrollo web, frontend, backend, bases de datos, metodologías ágiles",
+            "Carrera técnica enfocada al aprendizaje de lenguajes de programación, herramientas de desarrollo web, frontend, backend, bases de datos, metodologías ágiles. En la institucion Colombiana SENA",
           ]}
           sena={true}
         />
