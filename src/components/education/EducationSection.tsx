@@ -31,9 +31,16 @@ const EducationSection = ({ data, henry, sena }: EducationSectionProps) => {
             </p>
             <br />
             <a
-              target="_blank"
               className=" p-1 bg-[#8b0000cc] text-white rounded-[5px] hover:bg-[#aa0000e6]"
-              href="https://d2rf2c6bvm78n9.cloudfront.net/new-cert?id=90919c4249f9deb146a1fe52bbcd7e4f9f95168fbe985954a2f1b5689133f933"
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                window.open(
+                  "https://d2rf2c6bvm78n9.cloudfront.net/new-cert?id=90919c4249f9deb146a1fe52bbcd7e4f9f95168fbe985954a2f1b5689133f933",
+                  "_blank",
+                  "width=900,height=550"
+                );
+              }}
             >
               Ver Certificado
             </a>

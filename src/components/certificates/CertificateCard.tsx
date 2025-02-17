@@ -11,8 +11,11 @@ const CertificateCard = ({ data }: CertificateCardProps) => {
 
       <a
         className=" flex items-center justify-center bg-[#8b0000cc] w-[150px] h-[30px] rounded-[8px] border-[2px] border-solid border-white/20 transition-all duration-[0.3s] ease-out hover:scale-[1.1] shadow-custom hover:shadow-custom-hover hover:bg-[#aa0000e6]"
-        target="_blank"
-        href={data[3]}
+        href="#"
+        onClick={(e) => {
+          e.preventDefault();
+          window.open(data[3], "_blank", "width=900,height=720");
+        }}
       >
         Ver Certificado
       </a>
