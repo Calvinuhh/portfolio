@@ -1,5 +1,12 @@
 import Swal from "sweetalert2";
 
+function myFunction(string: string, texto: string) {
+  return string
+    .split(" ")
+    .filter((str) => str !== texto)
+    .join(" ");
+}
+
 const ExperienceCard = ({
   data,
   ti,
@@ -27,7 +34,16 @@ const ExperienceCard = ({
       <div>
         <h3 className=" text-[24px] font-thin">{data[1]}</h3>
         <h3 className=" text-[20px] font-bold">{data[2]}</h3>
-        <h4 className=" text-[18px] font-thin">{data[3]}</h4>
+        <h4 className=" text-[18px] font-thin">
+          {data[3].includes("actualmente") ? (
+            <>
+              {myFunction(data[3], "actualmente")} <strong>actualmente</strong>
+            </>
+          ) : (
+            data[3]
+          )}
+        </h4>
+
         <p className=" font-bold">{data[4]}</p>
         <p className=" font-thin">{data[5]}</p>
       </div>

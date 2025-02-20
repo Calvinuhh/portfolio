@@ -33,6 +33,23 @@ const Certificates = () => {
         />
         <CertificateCard
           data={[
+            "https://res.cloudinary.com/deotitxt8/image/upload/v1740059400/portfolio/efec-logo-white_lqgze9.png",
+            "EFSET English Certificate 67/100 (C1 Advanced)",
+            "EFSET",
+            "https://cert.efset.org/y47C83",
+          ]}
+        />
+        <CertificateCard
+          data={[
+            "https://res.cloudinary.com/deotitxt8/image/upload/v1740059750/portfolio/soyhenry_m6eruu.png",
+            "Full Stack Developer",
+            "Soy Henry",
+            "https://d2rf2c6bvm78n9.cloudfront.net/new-cert?id=90919c4249f9deb146a1fe52bbcd7e4f9f95168fbe985954a2f1b5689133f933",
+          ]}
+          henry={true}
+        />
+        <CertificateCard
+          data={[
             "https://res.cloudinary.com/deotitxt8/image/upload/portfolio/png-transparent-udemy-round-logo-tech-companies_zhai2f.png",
             "Curso completo de C# para ser desarrollador .NET",
             "Udemy",

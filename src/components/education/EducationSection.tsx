@@ -29,21 +29,6 @@ const EducationSection = ({ data, henry, sena }: EducationSectionProps) => {
               indicando la cantidad de horas realizadas y las principales
               tecnologías.
             </p>
-            <br />
-            <a
-              className=" p-1 bg-[#8b0000cc] text-white rounded-[5px] hover:bg-[#aa0000e6]"
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                window.open(
-                  "https://d2rf2c6bvm78n9.cloudfront.net/new-cert?id=90919c4249f9deb146a1fe52bbcd7e4f9f95168fbe985954a2f1b5689133f933",
-                  "_blank",
-                  "width=900,height=550"
-                );
-              }}
-            >
-              Ver Certificado
-            </a>
           </div>
         ),
         confirmButtonText: "Cerrar",
