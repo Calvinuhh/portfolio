@@ -30,6 +30,7 @@ const Projects = () => {
         <ProjectCard
           repo={true}
           web={true}
+          video={true}
           data={[
             "https://res.cloudinary.com/deotitxt8/image/upload/v1735191435/portfolio/wfk1esefsnykiqkcf6qm.png",
             "DevTree",
@@ -37,6 +38,7 @@ const Projects = () => {
           ]}
           repo_link="https://github.com/Calvinuhh/devtree_readme"
           web_link="https://devtree-client.onrender.com/"
+          video_link="https://youtu.be/ZCXx1lTa6u0"
         />
 
         <ProjectCard

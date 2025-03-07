@@ -1,11 +1,13 @@
 interface ProjectCardProps {
   data: string[];
   repo?: boolean;
-  doc?: boolean;
-  web?: boolean;
   repo_link?: string;
+  doc?: boolean;
   doc_link?: string;
+  web?: boolean;
   web_link?: string;
+  video?: boolean;
+  video_link?: string;
 }
 
 const ProjectCard = ({
@@ -16,6 +18,8 @@ const ProjectCard = ({
   doc_link,
   web,
   web_link,
+  video,
+  video_link,
 }: ProjectCardProps) => {
   return (
     <div className=" w-[400px] h-[650px] rounded-[16px] shadow-custom mx-[50px] mb-[70px] bg-white text-black">
@@ -71,6 +75,21 @@ const ProjectCard = ({
             <img
               className=" w-[50px]"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Globe_icon.svg/768px-Globe_icon.svg.png"
+              alt="web_icon"
+            />
+          </a>
+        )}
+
+        {video && (
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={video_link}
+            className=" transition-all duration-[0.2s] ease-out hover:scale-[1.1]"
+          >
+            <img
+              className=" w-[50px]"
+              src="https://res.cloudinary.com/deotitxt8/image/upload/v1741366417/portfolio/boton-de-play_y7yu16.png"
               alt="web_icon"
             />
           </a>
