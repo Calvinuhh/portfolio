@@ -44,6 +44,7 @@ const Projects = () => {
         <ProjectCard
           repo={true}
           web={true}
+          video={true}
           data={[
             "https://res.cloudinary.com/deotitxt8/image/upload/v1736141134/portfolio/Screenshot_2025-01-06_001816_hnyr7q.png",
             "REST API",
@@ -51,6 +52,7 @@ const Projects = () => {
           ]}
           repo_link="https://github.com/Calvinuhh/REST_API_readme"
           web_link="https://rest-api-client.onrender.com/register"
+          video_link="https://youtu.be/oWfzXXVQ74g"
         />
       </div>
     </main>
