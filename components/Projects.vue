@@ -1,5 +1,5 @@
 <template>
-  <main class="flex flex-col w-full mx-auto font-noto my-[100px] gap-[70px]">
+  <main class="flex flex-col w-[80%] mx-auto font-noto my-[100px] gap-[70px]">
 
     <div class="flex flex-wrap justify-center gap-[70px] sm:gap-[60px] md:gap-[50px]">
       <ProjectCard
