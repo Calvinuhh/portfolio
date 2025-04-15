@@ -9,7 +9,7 @@
           'https://holaamigo.ai/wp-content/uploads/2024/03/Logo_Hola_Amigo.png',
           'Desarrollador Junior',
           'HolaAmigo',
-          'Mayo 2025 - Actualmente',
+          'abr. 2025 - Actualmente',
           'Remoto',
           'Automatizaciones empresariales con IA'
         ]"
