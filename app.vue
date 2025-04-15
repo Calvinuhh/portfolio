@@ -1,6 +1,6 @@
 <template>
   <div class="bg-[#1a1a2e] min-h-screen p-5">
-    <Header/>
+    <Header :current-section="currentSection" @change-section="changeSection"/>
     <NavBar :active-section="currentSection" @change-section="changeSection"/>
     <Main :current-section="currentSection"/>
     <Footer/>

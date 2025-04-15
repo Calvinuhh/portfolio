@@ -21,7 +21,7 @@
         </div>
         <div class="flex items-center gap-[20px] w-fit">
           <button
-            @click="scrollToForm"
+            @click="handleEmailClick"
             class="flex gap-[10px] bg-[#8b0000cc] text-[15px] items-center justify-center w-[230px] h-[40px] rounded-[8px] border-[2px] border-white/20 transition-all duration-[0.3s] ease-out hover:scale-[1.1] hover:bg-[#aa0000] shadow-custom hover:shadow-custom-hover"
           >
             <img
@@ -78,6 +78,27 @@
 </template>
 
 <script setup>
+const props = defineProps({
+  currentSection: {
+    type: String,
+    required: true
+  }
+});
+
+const emit = defineEmits(['change-section']);
+
+const handleEmailClick = () => {
+  if (props.currentSection !== 'contact') {
+    emit('change-section', 'contact');
+    
+    setTimeout(() => {
+      scrollToForm();
+    }, 100);
+  } else {
+    scrollToForm();
+  }
+};
+
 const scrollToForm = () => {
   const formElement = document.getElementById("contact-form");
   if (formElement) {
