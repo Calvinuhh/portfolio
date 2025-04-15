@@ -1,8 +1,7 @@
 <template>
-  <main class="flex flex-col w-[1200px] mx-auto font-noto my-[100px] gap-[70px]">
-    <h2 class="font-bold text-[24px] text-white">Proyectos</h2>
+  <main class="flex flex-col w-full mx-auto font-noto my-[100px] gap-[70px]">
 
-    <div class="flex flex-wrap justify-center gap-[100px]">
+    <div class="flex flex-wrap justify-center gap-[70px] sm:gap-[60px] md:gap-[50px]">
       <ProjectCard
         :repo="true"
         :web="true"
@@ -40,6 +39,7 @@
         ]"
         repo_link="https://github.com/Calvinuhh/Mule-Backend"
       />
+
       <ProjectCard
         :repo="true"
         :doc="true"

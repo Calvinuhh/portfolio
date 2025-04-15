@@ -1,9 +1,7 @@
 <template>
-  <div class="flex flex-col w-[1200px] mx-auto text-white font-noto my-[100px] mb-[150px]">
-    <h2 class="text-[24px] font-bold mb-[100px]">
-      Licencias y Certificaciones
-    </h2>
-    <div class="flex p-2 gap-[50px] w-[1000px] flex-wrap mx-auto">
+  <div class="flex flex-col w-full px-4 md:w-[1200px] mx-auto my-[50px] md:my-[100px] text-white font-noto mb-[50px] md:mb-[150px]">
+   
+    <div class="flex p-2 gap-[20px] md:gap-[50px] w-full md:w-[1000px] flex-wrap mx-auto justify-center md:justify-start">
       <CertificateCard
         :data="[
           'https://res.cloudinary.com/deotitxt8/image/upload/portfolio/png-transparent-udemy-round-logo-tech-companies_zhai2f.png',

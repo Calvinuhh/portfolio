@@ -3,60 +3,71 @@
     id="contact-form"
     class="flex flex-col items-center justify-center gap-[40px] font-noto"
   >
-    <h1 class="text-white text-[24px]">¡Envíame un mensaje!</h1>
+    <h1 class="text-white text-[24px] sm:text-[28px] md:text-[32px]">
+      ¡Envíame un mensaje!
+    </h1>
+    
     <form
       ref="form"
       @submit.prevent="sendEmail"
-      class="bg-gray-800 p-6 rounded-lg shadow-custom border border-gray-700 text-white flex flex-col w-[500px] gap-[20px] items-center"
+      class="bg-gray-800 p-6 rounded-lg shadow-custom border border-gray-700 text-white flex flex-col w-[500px] sm:w-[600px] md:w-[700px] gap-[20px] items-center"
     >
-      <label for="name">Nombre:</label>
+      <label for="name" class="text-sm sm:text-base md:text-lg">Nombre:</label>
       <input
-        class="p-1 text-black w-[300px] rounded"
+        class="p-1 text-black w-[300px] sm:w-[350px] md:w-[400px] rounded"
         id="name"
         type="text"
         name="name"
       />
-      <p v-if="errors.name" class="text-red-500 text-center">{{ errors.name }}</p>
+      <p v-if="errors.name" class="text-red-500 text-center text-xs sm:text-sm md:text-base">
+        {{ errors.name }}
+      </p>
 
-      <label for="surname">Apellido:</label>
+      <label for="surname" class="text-sm sm:text-base md:text-lg">Apellido:</label>
       <input
-        class="p-1 text-black w-[300px] rounded"
+        class="p-1 text-black w-[300px] sm:w-[350px] md:w-[400px] rounded"
         id="surname"
         type="text"
         name="surname"
       />
-      <p v-if="errors.surname" class="text-red-500 text-center">{{ errors.surname }}</p>
+      <p v-if="errors.surname" class="text-red-500 text-center text-xs sm:text-sm md:text-base">
+        {{ errors.surname }}
+      </p>
 
-      <label for="email">Email:</label>
+      <label for="email" class="text-sm sm:text-base md:text-lg">Email:</label>
       <input
-        class="p-1 text-black w-[300px] rounded"
+        class="p-1 text-black w-[300px] sm:w-[350px] md:w-[400px] rounded"
         id="email"
         type="email"
         name="email"
       />
-      <p v-if="errors.email" class="text-red-500 text-center">{{ errors.email }}</p>
+      <p v-if="errors.email" class="text-red-500 text-center text-xs sm:text-sm md:text-base">
+        {{ errors.email }}
+      </p>
 
-      <label for="message">Mensaje:</label>
+      <label for="message" class="text-sm sm:text-base md:text-lg">Mensaje:</label>
       <textarea
-        class="p-1 text-black w-[300px] mb-[50px] rounded"
+        class="p-1 text-black w-[300px] sm:w-[350px] md:w-[400px] mb-[50px] rounded"
         id="message"
         name="message"
       ></textarea>
-      <p v-if="errors.message" class="text-red-500 text-center mb-[20px]">
+      <p v-if="errors.message" class="text-red-500 text-center text-xs sm:text-sm md:text-base mb-[20px]">
         {{ errors.message }}
       </p>
 
-      <img v-if="isSending" :src="loadingGif" alt="loading_gif" />
+      <img v-if="isSending" :src="loadingGif" alt="loading_gif" class="w-[50px] sm:w-[60px] md:w-[70px]" />
+      
       <button
         v-else
         type="submit"
-        class="bg-blue-500 text-white p-2 rounded-lg border border-blue-700 hover:bg-blue-700 hover:scale-[1.05] transition-all duration-300 ease-out mb-[20px]"
+        class="bg-blue-500 text-white p-2 rounded-lg border border-blue-700 hover:bg-blue-700 hover:scale-[1.05] transition-all duration-300 ease-out mb-[20px] text-xs sm:text-sm md:text-lg"
       >
         Enviar
       </button>
     </form>
   </div>
 </template>
+
 
 <script setup lang="ts">
 import Swal from 'sweetalert2'

@@ -1,9 +1,7 @@
 <template>
-  <section class="flex flex-col w-[1200px] p-3 my-[100px] mx-auto font-noto text-white">
-    <h2 class="text-2xl font-bold mb-[80px]">Experiencia</h2>
+  <section class="w-full max-w-[1200px] px-4 py-10 mx-auto font-noto text-white">
 
-    <div class="flex flex-wrap w-[1200px] gap-[50px] mx-auto justify-around">
-
+    <div class="flex flex-wrap gap-8 justify-center">
       <ExperienceCard 
         :data="[
           'https://holaamigo.ai/wp-content/uploads/2024/03/Logo_Hola_Amigo.png',
@@ -41,8 +39,6 @@
         ]"
         details="Sitio desarrollado para empresa de limpieza en Estados Unidos, las funciones principales fueron: Landing page, Página de información, Formulario para solicitar servicios, SDK Email.js para la comunicación entre los clientes y la empresa"
       />
-      
     </div>
   </section>
 </template>
-

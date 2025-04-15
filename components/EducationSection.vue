@@ -1,21 +1,23 @@
 <template>
-  <div class="p-[20px] bg-[#2d2d508a] rounded-[15px] mb-[80px]" >
-    <div class="flex justify-between mb-[20px]">
-      <h2 class="text-[24px] font-light">{{ data[0] }}</h2>
-      <div class="flex w-[300px] justify-center items-center bg-[#8b000050] rounded-[7px]">
-        <h2 class="text-[24px] font-extralight">{{ data[1] }}</h2>
+  <div class="education-card">
+    <div class="flex flex-col md:flex-row md:justify-between gap-4 md:gap-0 mb-[20px]">
+      <h2 class="text-[20px] md:text-[24px] font-light">{{ data[0] }}</h2>
+      <div class="flex w-full md:w-[300px] justify-center items-center bg-[#8b000050] rounded-[7px] py-2 md:py-0">
+        <h2 class="text-[18px] md:text-[24px] font-extralight">{{ data[1] }}</h2>
       </div>
     </div>
 
-    <div class="mb-[20px]">
-      <h3 class="text-[18px] font-bold">{{ data[2] }}</h3>
+    <div class="education-content">
+      <h3 class="text-[16px] md:text-[18px] font-bold">{{ data[2] }}</h3>
       <p class="font-thin mb-[20px]">{{ data[3] }}</p>
-      <button
-        @click="handleButtonClick"
-        class="flex items-center justify-center text-[18px] font-[700] py-[10px] px-[20px] w-[140px] h-[45px] bg-[#8b0000cc] rounded-[8px] border-[2px] border-solid border-white/20 transition-all duration-[0.3s] ease-out hover:scale-[1.1] shadow-custom hover:shadow-custom-hover hover:bg-[#aa0000e6]"
-      >
-        Detalles
-      </button>
+      <div class="flex justify-center md:justify-start"> 
+        <button
+          @click="handleButtonClick"
+          class="flex items-center justify-center text-[16px] md:text-[18px] font-[700] py-[10px] px-[20px] w-[140px] h-[45px] bg-[#8b0000cc] rounded-[8px] border-[2px] border-solid border-white/20 transition-all duration-[0.3s] ease-out hover:scale-[1.1] shadow-custom hover:shadow-custom-hover hover:bg-[#aa0000e6]"
+        >
+          Detalles
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -81,11 +83,57 @@ const handleButtonClick = () => {
 </script>
 
 <style scoped>
-.shadow-custom {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.education-card {
+  padding: 20px;
+  background-color: #2d2d508a;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 100%;
 }
 
-.shadow-custom-hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+.education-card h2,
+.education-card h3 {
+  text-align: left;
+}
+
+.education-card p {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.education-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .education-card {
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+
+  .education-card h2 {
+    font-size: 20px;
+  }
+
+  .education-card h3 {
+    font-size: 16px;
+  }
+
+  .education-card p {
+    padding: 0;
+    font-size: 14px;
+  }
+
+  .education-card button {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+  }
 }
 </style>

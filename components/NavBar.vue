@@ -1,6 +1,16 @@
 <template>
-  <nav class="relative flex justify-center mx-auto mt-10 mb-[100px]" style="font-family: 'noto sans';">
-    <div class="flex items-center h-[90px] relative">
+  <nav class="relative mx-auto mt-10 mb-[100px]" style="font-family: 'noto sans';">
+    <div class="md:hidden flex justify-start px-4">
+      <button @click="toggleMenu" class="text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div ref="navContainer" class="hidden md:flex items-center justify-center h-[90px] relative">
       <button
         v-for="item in navItems"
         :key="item.id"
@@ -17,8 +27,20 @@
 
       <div
         class="absolute bottom-1 h-[3px] w-12 transition-all duration-300 bg-[#4dcfe3] rounded-full"
-        :style="indicatorStyle"
+        :style="{ left: `${activeButtonOffset}px`, transform: 'translateX(-50%)' }"
       ></div>
+    </div>
+
+    <div v-if="menuOpen" class="flex flex-col items-center mt-5 space-y-4 md:hidden">
+      <button
+        v-for="item in navItems"
+        :key="item.id"
+        class="text-white text-lg font-medium"
+        :class="{ 'text-[#4dcfe3]': activeSection === item.id }"
+        @click="selectSection(item.id)"
+      >
+        {{ item.label }}
+      </button>
     </div>
   </nav>
 </template>
@@ -46,26 +68,24 @@ const navItems = [
 ];
 
 const buttonRefs = ref({});
+const navContainer = ref(null);
+const menuOpen = ref(false);
 
-const indicatorStyle = computed(() => {
+const toggleMenu = () => {
+  menuOpen.value = !menuOpen.value;
+};
+
+const selectSection = (section) => {
+  emit('change-section', section);
+  menuOpen.value = false;
+};
+
+const activeButtonOffset = computed(() => {
   const activeButton = buttonRefs.value[props.activeSection];
-  if (!activeButton) return {};
-  
-  const buttonRect = activeButton.getBoundingClientRect();
-  const containerRect = activeButton.parentElement.getBoundingClientRect();
-  
-  const leftPosition = buttonRect.left - containerRect.left + (buttonRect.width / 2) - 24;
-  
-  return {
-    transform: `translateX(${leftPosition}px)`
-  };
-});
+  if (!activeButton) return 0;
 
-onMounted(() => {
-  window.addEventListener('resize', () => {});
-});
-
-onBeforeUnmount(() => {
-  window.removeEventListener('resize', () => {});
+  const buttonOffset = activeButton.offsetLeft;
+  const buttonWidth = activeButton.offsetWidth;
+  return buttonOffset + buttonWidth / 2;
 });
 </script>

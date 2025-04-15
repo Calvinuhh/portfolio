@@ -1,44 +1,48 @@
 <template>
-  <div 
-    class="w-[500px] h-[260px] flex gap-5 p-5 border rounded-[10px] relative bg-[#42425f] bg-opacity-80 backdrop-blur-sm transition-all duration-[0.3s] ease-in-out hover:scale-[1.01] mb-[50px]"
-    style="box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);"
-    :style="{ 'box-shadow': isHovered ? '15px 15px 15px rgba(0, 0, 0, 0.3)' : '10px 10px 10px rgba(0, 0, 0, 0.3)' }"
+  <article 
+    class="w-full max-w-[500px] min-h-[260px] flex gap-5 p-5 border rounded-[10px] relative bg-[#42425f] bg-opacity-80 backdrop-blur-sm transition-all duration-300 ease-in-out hover:scale-[1.01] mb-10"
+    :style="{ boxShadow: isHovered ? '15px 15px 15px rgba(0, 0, 0, 0.3)' : '10px 10px 10px rgba(0, 0, 0, 0.3)' }"
     @mouseenter="isHovered = true"
     @mouseleave="isHovered = false"
   >
     <img
+      :src="data[0]"
+      :alt="`Logo de ${data[2]}`"
+      @error="handleImgError"
+      class="object-contain"
       :style="{
-        width: holamigo ? '180px' : '120px',
-        height: holamigo ?  '70px' : '110px',
+        width: holamigo ? '120px' : '100px',
+        height: holamigo ? '60px' : '100px',
         borderRadius: ti ? '50%' : '0'
       }"
-      :src="data[0]"  
-      alt="corp_logo"
     />
-    <div>
-      <h3 class="text-2xl font-thin">{{ data[1] }}</h3>
-      <h3 class="text-xl font-bold">{{ data[2] }}</h3>
-      <h4 class="text-lg font-thin">
-        <template v-if="data[3].includes('Actualmente')">
-          {{ myFunction(data[3], 'Actualmente') }} <strong>Actualmente</strong>
-        </template>
-        <template v-else>
-          {{ data[3] }}
-        </template>
-      </h4>
+    <div class="flex flex-col justify-between">
+      <div>
+        <h3 class="text-xl font-thin md:text-2xl">{{ data[1] }}</h3>
+        <h3 class="text-lg font-bold md:text-xl">{{ data[2] }}</h3>
+        <h4 class="text-base font-thin md:text-lg">
+          <template v-if="data[3].includes('Actualmente')">
+            {{ myFunction(data[3], 'Actualmente') }} <strong>Actualmente</strong>
+          </template>
+          <template v-else>
+            {{ data[3] }}
+          </template>
+        </h4>
+        <p class="font-bold md:text-lg">{{ data[4] }}</p>
+        <p class="font-thin text-sm md:text-base">{{ data[5] }}</p>
+      </div>
 
-      <p class="font-bold">{{ data[4] }}</p>
-      <p class="font-thin">{{ data[5] }}</p>
+      <button
+        class="self-end mt-4 text-white text-sm underline hover:scale-105 transition"
+        @click="showAlert"
+        :aria-label="`Ver detalles de ${data[2]}`"
+      >
+        Ver detalles
+      </button>
     </div>
-
-    <button
-      class="absolute bottom-2 right-4 transition-all duration-200 ease-out hover:scale-110 text-white"
-      @click="showAlert"
-    >
-      Ver detalles
-    </button>
-  </div>
+  </article>
 </template>
+
 
 <script lang="ts" setup>
 import Swal from 'sweetalert2';
@@ -78,5 +82,10 @@ const showAlert = () => {
     icon: 'info',
     confirmButtonText: 'Cerrar',
   });
+};
+
+const handleImgError = (event: Event) => {
+  const target = event.target as HTMLImageElement;
+  target.src = '/fallback-logo.png';
 };
 </script>
