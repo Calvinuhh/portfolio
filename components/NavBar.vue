@@ -61,7 +61,6 @@ const navItems = [
   { id: 'about', label: 'Sobre mí' },
   { id: 'technologies', label: 'Tecnologías' },
   { id: 'experience', label: 'Experiencia' },
-  { id: 'projects', label: 'Proyectos' },
   { id: 'education', label: 'Educación' },
   { id: 'certifications', label: 'Certificaciones' },
   { id: 'contact', label: 'Contacto' }
