@@ -21,7 +21,7 @@
       </p>
 
       <p class="text-base sm:text-lg text-justify font-light">
-        Actualmente me encuentro desarrollando automatizaciones con la herramienta <strong class="font-bold">n8n</strong> integrando modelos de Inteligencia Artificial como los de OpenAI, para aprovechar el potencial de la IA en la automatización de procesos empresariales.
+        Actualmente me encuentro desarrollando automatizaciones con la herramienta <strong class="font-bold">n8n</strong> integrando modelos de Inteligencia Artificial como los de OpenAI, para aprovechar el potencial de la IA en la automatización de procesos con diferentes enfoques.
       </p>
     </div>
   </div>

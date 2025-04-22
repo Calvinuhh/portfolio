@@ -9,9 +9,9 @@
           'HolaAmigo',
           'abr. 2025 - Actualmente',
           'Remoto',
-          'Automatizaciones empresariales con IA'
+          'Automatizaciones con IA'
         ]"
-        details="Actualmente desarrollo automatizaciones empresariales implementando n8n e integraciones con inteligencia artificial. Mis responsabilidades incluyen diseñar flujos de trabajo automatizados, conectar APIs de diferentes servicios, e implementar soluciones de IA para optimizar procesos internos. Trabajo en un equipo remoto donde desarrollamos herramientas que mejoran la productividad de las empresas mediante tecnología innovadora."
+        details="Actualmente desarrollo automatizaciones implementando n8n e integraciones con inteligencia artificial. Mis responsabilidades incluyen diseñar flujos de trabajo automatizados, conectar APIs de diferentes servicios (Airtable, Gmail, Calendar, etc...), e implementar soluciones de IA para optimizar procesos internos. Trabajo en un equipo remoto donde desarrollamos herramientas que resuelven una problematica/necesidad de las empresas mediante tecnología innovadora."
         :holamigo="true"
       />
     
