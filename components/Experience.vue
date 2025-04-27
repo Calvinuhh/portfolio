@@ -25,7 +25,7 @@
           'Pasantia de desarrollo web en una empresa de tecnologia en Mexico',
         ]"
         :ti="true"
-        details="Durante mi pasantía en TiNegocios, trabajé realizando mantenimiento y nuevas funcionalidades en proyectos con el framework CodeIgniter. Realizando migraciones de codigo legacy a codigo mas actualizado. Mejorando y diseñando las bases de datos para asi optimizar las consultas desde el servidor. Participé en el ciclo completo de desarrollo de nuevos proyectos. Esta experiencia me permitió mejorar mis habilidades en trabajo en equipo y resolución de problemas en un entorno profesional real."
+        details="Durante mi pasantía en TiNegocios, trabajé realizando mantenimiento y nuevas funcionalidades en proyectos con el framework CodeIgniter. Realizando migraciones de codigo legacy a codigo mas actualizado. Mejorando y diseñando las bases de datos para asi optimizar las consultas desde el servidor. Esta experiencia me permitió mejorar mis habilidades en trabajo en equipo y resolución de problemas en un entorno profesional real."
       />
 
       <ExperienceCard
