@@ -36,20 +36,7 @@
           </button>
 
           <div class="flex gap-3 sm:gap-4">
-            <a
-              class="transition-all duration-300 hover:scale-110"
-              href="https://drive.google.com/file/d/168gxnurjo7Expo90msTg72XQZ8NLRfbm/view"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                class="w-10 sm:w-11"
-                src="https://res.cloudinary.com/deotitxt8/image/upload/v1733404612/portfolio/emftua6x8kxuha56katy.png"
-                alt="doc_icon"
-              />
-            </a>
-
-            <a
+           <a
               class="transition-all duration-300 hover:scale-110"
               href="https://www.linkedin.com/in/calvin-howard-853895283/"
               target="_blank"
