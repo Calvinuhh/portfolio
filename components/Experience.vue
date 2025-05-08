@@ -4,9 +4,9 @@
     <div class="flex flex-wrap gap-8 justify-center">
       <ExperienceCard 
         :data="[
-          'https://holaamigo.ai/wp-content/uploads/2024/03/Logo_Hola_Amigo.png',
+          'https://res.cloudinary.com/deotitxt8/image/upload/v1746721911/portfolio/el_laboratorio_co_cover_kkjbxv.jpg',
           'Desarrollador Junior',
-          'HolaAmigo',
+          'El Laboratorio',
           'abr. 2025 - Actualmente',
           'Remoto',
           'Automatizaciones con IA'
