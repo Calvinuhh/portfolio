@@ -2,23 +2,9 @@
   <section class="w-full max-w-[1200px] mx-auto px-4 my-[100px] flex flex-col items-center gap-10">
 
     <div class="flex flex-wrap justify-center gap-6 w-full max-w-[1000px]">
-      <img
-        v-for="(tech, index) in techLogos"
-        :key="index"
-        :src="tech.src"
-        :alt="tech.alt"
-        :class="tech.class"
-      />
+      <img v-for="(tech, index) in techLogos" :key="index" :src="tech.src" :alt="tech.alt" :class="tech.class" />
     </div>
 
-    <div class="flex flex-col items-center gap-2 mt-10">
-      <img
-        class="w-[300px]"
-        src="https://github-readme-stats.vercel.app/api/top-langs?username=calvinuhh&show_icons=true&locale=en&layout=compact"
-        alt="github_stats"
-      />
-      <p class="text-white font-noto text-sm">Tomado de las estadísticas de GitHub</p>
-    </div>
   </section>
 </template>
 
@@ -90,9 +76,9 @@ const techLogos = [
     class: "w-[150px] h-[100px] transition-transform duration-300 ease-out hover:scale-110"
   },
   {
-    src: "https://nuxt.com/assets/design-kit/icon-green.svg",
-    alt: "nuxt_logo",
-    class: "w-[150px] h-[100px] transition-transform duration-300 ease-out hover:scale-110"
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png",
+    alt: "vue_logo",
+    class: "w-[100px] h-[100px] transition-transform duration-300 ease-out hover:scale-110"
   },
   {
     src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/N8n-logo-new.svg/2560px-N8n-logo-new.svg.png",
