@@ -1,27 +1,38 @@
 <template>
-  <div 
+  <div
     class="flex flex-col w-full max-w-[1200px] mx-auto p-5 sm:p-6 md:p-8 gap-5 text-white rounded-2xl mb-12 border border-black/10 bg-[#2d2d508a] transition-all duration-300 ease-in-out hover:scale-[1.01]"
-    style="font-family: 'Noto Sans', sans-serif; box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);"
+    style="
+      font-family: 'Noto Sans', sans-serif;
+      box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
+    "
   >
-
     <div class="space-y-5">
       <p class="text-base sm:text-lg text-justify font-light">
-        Desarrollador Backend con experiencia en los stacks 
-        <strong class="font-bold">PERN</strong> y 
-        <strong class="font-bold">MERN</strong>, 
-        con un enfoque sólido en la creación de API's escalables y eficientes.
+        Soy especialista en automatizaciones e integraciones con inteligencia
+        artificial, con experiencia desarrollando soluciones a la medida para
+        empresas que buscan optimizar procesos, ahorrar tiempo y reducir costos.
       </p>
 
       <p class="text-base sm:text-lg text-justify font-light">
-        <strong class="font-bold">Express.js</strong> es el framework con el que más he trabajado, desarrollando múltiples proyectos que me han permitido adquirir una comprensión profunda de su ecosistema.
+        Trabajo principalmente con <strong class="font-bold">n8n</strong>,
+        herramienta con la cual he orquestado flujos complejos conectando
+        múltiples <strong class="font-bold">APIs</strong>, servicios externos y
+        sistemas internos (incluyendo backends empresariales). Esto me ha
+        permitido adquirir un conocimiento profundo del ecosistema de n8n y
+        enfrentarme a desafíos reales en la implementación de automatizaciones
+        efectivas.
       </p>
 
       <p class="text-base sm:text-lg text-justify font-light">
-        Mi experiencia con <strong class="font-bold">TypeScript</strong> me permite desarrollar aplicaciones más robustas, mantenibles y escalables. He trabajado en la construcción de API's usando TypeScript como parte de mi proceso constante de mejora y profesionalización.
+        Además, integro modelos de <strong class="font-bold">IA</strong> como
+        <strong class="font-bold">OpenAI</strong>, potenciando chatbots,
+        procesamiento de información y otras soluciones inteligentes para
+        mejorar la eficiencia y la productividad de las organizaciones.
       </p>
 
       <p class="text-base sm:text-lg text-justify font-light">
-        Actualmente me encuentro desarrollando automatizaciones con la herramienta <strong class="font-bold">n8n</strong> integrando modelos de Inteligencia Artificial como los de OpenAI, para aprovechar el potencial de la IA en la automatización de procesos con diferentes enfoques.
+        Me apasiona crear integraciones escalables y sostenibles que generen
+        valor tangible en los negocios.
       </p>
     </div>
   </div>

@@ -9,7 +9,7 @@
       <div class="flex flex-col items-center lg:items-start space-y-3 sm:space-y-4 text-center lg:text-left">
         <h1 class="text-2xl sm:text-3xl md:text-4xl font-semibold">Calvin Howard</h1>
         <h2 class="text-lg sm:text-xl md:text-2xl font-light">
-          Backend Developer || Full Stack Developer
+          Automations & AI Integrations
         </h2>
 
         <div class="flex items-center gap-2 sm:gap-3">
