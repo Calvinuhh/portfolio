@@ -1,29 +1,38 @@
 <template>
   <div class="bg-[#1a1a2e] min-h-screen p-5">
-    <Header :current-section="currentSection" @change-section="changeSection"/>
-    <NavBar :active-section="currentSection" @change-section="changeSection"/>
-    <Main :current-section="currentSection"/>
-    <Footer/>
+    <Header :current-section="currentSection" @change-section="changeSection" />
+    <NavBar :active-section="currentSection" @change-section="changeSection" />
+    <Main :current-section="currentSection" />
+    <Footer />
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted } from "vue";
 
-const currentSection = ref('about'); 
+const currentSection = ref("about");
 
 const changeSection = (section) => {
   currentSection.value = section;
   if (process.client) {
-    localStorage.setItem('lastSection', section);
+    localStorage.setItem("lastSection", section);
   }
 };
 
 onMounted(() => {
   if (process.client) {
-    const savedSection = localStorage.getItem('lastSection');
-    const validSections = ['about', 'technologies', 'experience', 'projects', 'education', 'certifications', 'contact'];
-    
+    const savedSection = localStorage.getItem("lastSection");
+    const validSections = [
+      "about",
+      "technologies",
+      "experience",
+      "projects",
+      "education",
+      "certifications",
+      "automations",
+      "contact",
+    ];
+
     if (savedSection && validSections.includes(savedSection)) {
       currentSection.value = savedSection;
     }
