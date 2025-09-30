@@ -6,7 +6,6 @@
     <Education v-else-if="currentSection === 'education'" />
     <Certifications v-else-if="currentSection === 'certifications'" />
     <Automations v-else-if="currentSection === 'automations'" />
-    <Contact v-else-if="currentSection === 'contact'" />
   </div>
 </template>
 

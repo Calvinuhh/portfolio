@@ -94,7 +94,6 @@ const navItems = [
   { id: "education", label: "Educación" },
   { id: "certifications", label: "Certificaciones" },
   { id: "automations", label: "Automatizaciones" },
-  { id: "contact", label: "Contacto" },
 ];
 
 const buttonRefs = ref({});

@@ -30,9 +30,7 @@ onMounted(() => {
       "education",
       "certifications",
       "automations",
-      "contact",
     ];
-
     if (savedSection && validSections.includes(savedSection)) {
       currentSection.value = savedSection;
     }
